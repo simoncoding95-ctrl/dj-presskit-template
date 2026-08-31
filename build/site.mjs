@@ -96,15 +96,24 @@ const rows = (list) =>
     )
     .join("")}</div>`;
 
+// Lecteur SoundCloud : on ne stocke que l'ID de piste dans le contenu.
+const scPlayer = (id, title) =>
+  `<iframe class="mix__player" title="${esc(title)}" height="120" loading="lazy" frameborder="no" scrolling="no"
+    allow="autoplay; encrypted-media"
+    src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F${esc(id)}&color=%233f5a5a&visual=false&show_artwork=false&show_comments=false&show_user=false&show_teaser=false&hide_related=true"></iframe>`;
+
 const mixRows = (list) =>
   `<div class="rows">${list
     .map(
-      (m) => `<a class="row row--link" href="${esc(m.url || "#")}" target="_blank" rel="noopener">
-      <span class="row__key">${esc(m.title)}</span>
-      <span class="mono">${esc(m.year || "")}</span>
-      <span class="row__val">${esc(m.length || "")}</span>
-      <span class="mono">Écouter &#8594;</span>
-    </a>`
+      (m) => `<div class="mix">
+      <a class="row row--link" href="${esc(m.url || "#")}" target="_blank" rel="noopener">
+        <span class="row__key">${esc(m.title)}</span>
+        <span class="mono">${esc(m.year || "")}</span>
+        <span class="row__val">${esc(m.length || "")}</span>
+        <span class="mono">Écouter &#8594;</span>
+      </a>
+      ${m.soundcloud_id ? scPlayer(m.soundcloud_id, m.title) : ""}
+    </div>`
     )
     .join("")}</div>`;
 

@@ -1,5 +1,5 @@
 {
-  "artist": "NOM D'ARTISTE",
+  "artist": "A.RES",
   "tagline": "Une ligne qui résume le projet : son, ville, signature",
   "meta": [
     "Ville, Pays",
@@ -126,22 +126,18 @@
   ],
   "mixes": [
     {
-      "title": "Nom de la série, du podcast ou de la radio",
-      "year": "0000",
-      "length": "00 min",
-      "url": ""
+      "title": "A.RES — micro halloween",
+      "year": "2025",
+      "length": "54 min",
+      "url": "https://soundcloud.com/dorian-moreau-453577433/a-res-micro-halloween",
+      "soundcloud_id": "2177942073"
     },
     {
-      "title": "Live enregistré au club ou au festival",
-      "year": "0000",
-      "length": "00 min",
-      "url": ""
-    },
-    {
-      "title": "Mix",
-      "year": "0000",
-      "length": "00 min",
-      "url": ""
+      "title": "A.RES B2B UNKNOW (JSW)",
+      "year": "2025",
+      "length": "59 min",
+      "url": "https://soundcloud.com/dorian-moreau-453577433/ares-b2b-unknow-jsw",
+      "soundcloud_id": "2169966045"
     }
   ],
   "dates": [
@@ -203,11 +199,11 @@
   "links": [
     {
       "label": "Instagram",
-      "url": ""
+      "url": "https://www.instagram.com/a.res_music/"
     },
     {
       "label": "SoundCloud",
-      "url": ""
+      "url": "https://soundcloud.com/dorian-moreau-453577433"
     },
     {
       "label": "Bandcamp",

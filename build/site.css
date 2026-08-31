@@ -414,6 +414,13 @@ a { color: inherit; }
 .row--link { text-decoration: none; transition: padding-left .18s; }
 .row--link:hover { padding-left: 10px; }
 
+/* Mix + lecteur embarqué : la ligne perd sa bordure au profit du bloc. */
+.mix { border-bottom: 1px solid var(--line); }
+.mix .row { border-bottom: 0; }
+.night .mix { border-bottom-color: var(--line-dark); }
+.mix__player { display: block; width: 100%; border: 0; margin: 0 0 18px; }
+@media print { .mix__player { display: none; } }
+
 @media (max-width: 720px) {
   .row { grid-template-columns: 1fr; gap: 4px; }
 }
