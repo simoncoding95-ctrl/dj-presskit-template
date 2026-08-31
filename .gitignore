@@ -1,0 +1,11 @@
+dist/
+.DS_Store
+Thumbs.db
+*.pdf.tmp
+node_modules/
+.vercel
+.env*.local
+
+# ssh keys
+test
+test.pub

@@ -1,0 +1,87 @@
+{
+  "artist": "Volta Kane",
+  "tagline": "Electro rapide et basses lourdes, taillée pour les fins de nuit",
+  "meta": ["Marseille, FR", "Electro / Breakbeat / Acid", "132–145 BPM", "Fréquence Sud"],
+  "hero_image": "assets/photos/placeholder-hero.svg",
+  "hero_credit": "Léa Marchetti",
+  "booking_email": "booking@voltakane.fr",
+  "press_email": "press@voltakane.fr",
+  "updated": "31 août 2026",
+
+  "bio_short": "Volta Kane fait de l'electro rapide et physique, taillée pour les fins de nuit. Résidente du Cabanon à Marseille depuis 2023, elle sort sur Fréquence Sud et a joué à Nuits Sonores, Dour et au Tresor.",
+  "bio_long": [
+    "Camille Ferrand démarre derrière les platines à Marseille en 2018, dans les soirées d'un collectif du 3e arrondissement. Formée à la basse et au sound system, elle garde de ces années une obsession pour le bas du spectre et un goût pour les salles où le public ne s'assoit jamais.",
+    "Ses sets tournent entre 132 et 145 BPM et tiennent sur trois éléments : des breaks électro joués longs, des lignes de 303 saturées, et des transitions à quatre platines qui superposent deux rythmiques pendant huit à seize mesures avant de trancher. Rien n'est préparé à l'avance : la structure du set se décide sur la première demi-heure.",
+    "Mistral Sequence (Fréquence Sud, mars 2026) est son premier EP en solo, suivi d'un remix pour Nadia Reff en juin. Elle prépare un set hybride machines pour l'automne 2026."
+  ],
+  "facts": [
+    ["Base", "Marseille"],
+    ["Tempo", "132–145 BPM"],
+    ["Label", "Fréquence Sud"],
+    ["Résidence", "Le Cabanon, depuis 2023"],
+    ["Territoire", "Europe"]
+  ],
+
+  "photos": [
+    { "src": "assets/photos/placeholder-01.svg", "credit": "Léa Marchetti", "caption": "Cabaret Aléatoire, Marseille" },
+    { "src": "assets/photos/placeholder-02.svg", "credit": "Léa Marchetti", "caption": "Portrait, studio" },
+    { "src": "assets/photos/placeholder-03.svg", "credit": "Tom Ravel", "caption": "Nuits Sonores, Lyon" },
+    { "src": "assets/photos/placeholder-04.svg", "credit": "Tom Ravel", "caption": "Tresor, Berlin" },
+    { "src": "assets/photos/placeholder-05.svg", "credit": "Léa Marchetti", "caption": "Le Cabanon, 5h" },
+    { "src": "assets/photos/placeholder-06.svg", "credit": "Sarah Nedjar", "caption": "Dour Festival" }
+  ],
+
+  "sets": [
+    { "format": "DJ set", "length": "1h30 – 3h", "setup": "4 CDJ-3000 + DJM-A9", "note": "Format standard" },
+    { "format": "Extended", "length": "4h – 6h", "setup": "4 CDJ-3000 + DJM-A9", "note": "Salles de moins de 600 personnes" },
+    { "format": "Live hybride", "length": "75 min", "setup": "2 CDJ + Analog Rytm + TB-03", "note": "À partir d'octobre 2026" },
+    { "format": "B2B", "length": "2h", "setup": "4 CDJ + DJM", "note": "Sur échange préalable" }
+  ],
+
+  "releases": [
+    { "year": "2026", "title": "Bleu Zénith (Volta Kane Remix)", "artist": "Nadia Reff", "label": "Fréquence Sud", "art": "assets/artwork/placeholder-01.svg", "url": "https://exemple.com" },
+    { "year": "2026", "title": "Mistral Sequence", "artist": "EP 4 titres", "label": "Fréquence Sud", "art": "assets/artwork/placeholder-02.svg", "url": "https://exemple.com" },
+    { "year": "2025", "title": "Cassis Drive", "artist": "VA — Sud Signal Vol. 2", "label": "Fréquence Sud", "art": "assets/artwork/placeholder-03.svg", "url": "https://exemple.com" }
+  ],
+
+  "mixes": [
+    { "title": "Rinse France — Guest mix", "year": "2026", "length": "60 min", "url": "https://exemple.com" },
+    { "title": "Live au Cabanon, 5h du matin", "year": "2025", "length": "94 min", "url": "https://exemple.com" },
+    { "title": "Podcast Hors Piste #114", "year": "2024", "length": "72 min", "url": "https://exemple.com" }
+  ],
+
+  "dates": [
+    { "group": "Festivals", "items": ["Nuits Sonores, Lyon", "Dour, BE", "Marsatac, Marseille", "Positive Education, Saint-Étienne"] },
+    { "group": "Clubs", "items": ["Tresor, Berlin", "Rex Club, Paris", "Fuse, Bruxelles", "Le Sucre, Lyon", "Cabaret Aléatoire, Marseille"] },
+    { "group": "Résidences", "items": ["Le Cabanon, Marseille — bimestrielle depuis 2023"] }
+  ],
+
+  "press": [
+    { "quote": "Une des rares à faire tenir l'electro à 140 sans que ça parte en démonstration technique.", "source": "Trax Magazine", "date": "avril 2026", "url": "https://exemple.com" },
+    { "quote": "Mistral Sequence sonne comme quatre morceaux pensés pour un seul moment de la nuit, et ça s'entend.", "source": "Groove", "date": "mars 2026", "url": "https://exemple.com" },
+    { "quote": "Le genre de set dont on parle encore au petit-déjeuner du lendemain.", "source": "Le Cabanon", "date": "février 2026", "url": "" }
+  ],
+
+  "tech": [
+    ["Platines", "4 × CDJ-3000, link activé"],
+    ["Mixer", "DJM-A9 ou DJM-900NXS2"],
+    ["Monitoring", "2 wedges en cabine, réglés avant l'arrivée"],
+    ["Apporté", "Clés USB + cellules"],
+    ["Arrivée", "60 min avant le set"]
+  ],
+  "rider_url": "technical-rider.pdf",
+  "pdf_url": "presskit.pdf",
+
+  "links": [
+    { "label": "Instagram", "url": "https://exemple.com" },
+    { "label": "SoundCloud", "url": "https://exemple.com" },
+    { "label": "Bandcamp", "url": "https://exemple.com" },
+    { "label": "Spotify", "url": "https://exemple.com" },
+    { "label": "Resident Advisor", "url": "https://exemple.com" }
+  ],
+
+  "contacts": [
+    { "role": "Booking", "name": "Camille Ferrand", "email": "booking@voltakane.fr" },
+    { "role": "Presse", "name": "Yann Dubreuil", "email": "press@voltakane.fr" }
+  ]
+}

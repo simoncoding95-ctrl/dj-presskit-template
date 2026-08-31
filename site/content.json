@@ -1,0 +1,237 @@
+{
+  "artist": "NOM D'ARTISTE",
+  "tagline": "Une ligne qui résume le projet : son, ville, signature",
+  "meta": [
+    "Ville, Pays",
+    "Genre / Genre",
+    "000–000 BPM",
+    "Label ou collectif"
+  ],
+  "hero_image": "assets/photos/placeholder-hero.svg",
+  "hero_credit": "Nom du photographe",
+  "booking_email": "booking@exemple.com",
+  "press_email": "press@exemple.com",
+  "updated": "31 août 2026",
+  "bio_short": "40 à 60 mots, à la 3e personne. C'est la version que les organisateurs copient-collent sur leur event. Des faits : label, résidence, salles, technique. Pas d'adjectifs.",
+  "bio_long": [
+    "Paragraphe 1 — l'origine et la trajectoire : comment le projet a démarré, ce qui l'a formé.",
+    "Paragraphe 2 — le son : ce qui se passe concrètement dans un set. Tempo, textures, digging, matériel, façon de construire. C'est le paragraphe qui différencie.",
+    "Paragraphe 3 — l'actualité : sorties récentes, résidence, projet en cours, direction des 12 prochains mois."
+  ],
+  "facts": [
+    [
+      "Base",
+      "Ville"
+    ],
+    [
+      "Tempo",
+      "000–000 BPM"
+    ],
+    [
+      "Label",
+      "Nom"
+    ],
+    [
+      "Résidence",
+      "Lieu, depuis 0000"
+    ],
+    [
+      "Territoire",
+      "Europe"
+    ]
+  ],
+  "photos": [
+    {
+      "src": "assets/photos/placeholder-01.svg",
+      "credit": "Photographe",
+      "caption": "Lieu, ville"
+    },
+    {
+      "src": "assets/photos/placeholder-02.svg",
+      "credit": "Photographe",
+      "caption": "Lieu, ville"
+    },
+    {
+      "src": "assets/photos/placeholder-03.svg",
+      "credit": "Photographe",
+      "caption": "Lieu, ville"
+    },
+    {
+      "src": "assets/photos/placeholder-04.svg",
+      "credit": "Photographe",
+      "caption": "Lieu, ville"
+    },
+    {
+      "src": "assets/photos/placeholder-05.svg",
+      "credit": "Photographe",
+      "caption": "Lieu, ville"
+    },
+    {
+      "src": "assets/photos/placeholder-06.svg",
+      "credit": "Photographe",
+      "caption": "Lieu, ville"
+    }
+  ],
+  "sets": [
+    {
+      "format": "DJ set",
+      "length": "1h30 – 3h",
+      "setup": "4 CDJ + DJM",
+      "note": "Format standard"
+    },
+    {
+      "format": "Extended",
+      "length": "4h – 6h",
+      "setup": "4 CDJ + DJM",
+      "note": "Sur demande"
+    },
+    {
+      "format": "Live / hybride",
+      "length": "00 min",
+      "setup": "Machines, contrôleur, sortie",
+      "note": "Disponibilité"
+    },
+    {
+      "format": "B2B",
+      "length": "0h",
+      "setup": "4 CDJ + DJM",
+      "note": "Avec qui, ou ouvert"
+    }
+  ],
+  "releases": [
+    {
+      "year": "0000",
+      "title": "Titre",
+      "artist": "EP / Album / VA / Remix",
+      "label": "Label",
+      "art": "assets/artwork/placeholder-01.svg",
+      "url": ""
+    },
+    {
+      "year": "0000",
+      "title": "Titre",
+      "artist": "EP / Album / VA / Remix",
+      "label": "Label",
+      "art": "assets/artwork/placeholder-02.svg",
+      "url": ""
+    },
+    {
+      "year": "0000",
+      "title": "Titre",
+      "artist": "EP / Album / VA / Remix",
+      "label": "Label",
+      "art": "assets/artwork/placeholder-03.svg",
+      "url": ""
+    }
+  ],
+  "mixes": [
+    {
+      "title": "Nom de la série, du podcast ou de la radio",
+      "year": "0000",
+      "length": "00 min",
+      "url": ""
+    },
+    {
+      "title": "Live enregistré au club ou au festival",
+      "year": "0000",
+      "length": "00 min",
+      "url": ""
+    },
+    {
+      "title": "Mix",
+      "year": "0000",
+      "length": "00 min",
+      "url": ""
+    }
+  ],
+  "dates": [
+    {
+      "group": "Festivals",
+      "items": [
+        "Festival, ville",
+        "Festival, ville",
+        "Festival, ville"
+      ]
+    },
+    {
+      "group": "Clubs",
+      "items": [
+        "Club, ville",
+        "Club, ville",
+        "Club, ville"
+      ]
+    },
+    {
+      "group": "Résidences",
+      "items": [
+        "Lieu, ville — périodicité, depuis 0000"
+      ]
+    }
+  ],
+  "press": [
+    {
+      "quote": "Citation réelle et vérifiable, une à deux phrases. Supprime la section tant que tu n'en as pas.",
+      "source": "Média",
+      "date": "mois année",
+      "url": ""
+    }
+  ],
+  "tech": [
+    [
+      "Platines",
+      "4 × CDJ-3000, link activé"
+    ],
+    [
+      "Mixer",
+      "DJM-A9 ou DJM-900NXS2"
+    ],
+    [
+      "Monitoring",
+      "2 wedges en cabine"
+    ],
+    [
+      "Apporté",
+      "Clés USB"
+    ],
+    [
+      "Arrivée",
+      "60 min avant le set"
+    ]
+  ],
+  "rider_url": "technical-rider.pdf",
+  "pdf_url": "presskit.pdf",
+  "links": [
+    {
+      "label": "Instagram",
+      "url": ""
+    },
+    {
+      "label": "SoundCloud",
+      "url": ""
+    },
+    {
+      "label": "Bandcamp",
+      "url": ""
+    },
+    {
+      "label": "Spotify",
+      "url": ""
+    },
+    {
+      "label": "Resident Advisor",
+      "url": ""
+    }
+  ],
+  "contacts": [
+    {
+      "role": "Booking",
+      "name": "Nom",
+      "email": "booking@exemple.com"
+    },
+    {
+      "role": "Presse",
+      "name": "Nom",
+      "email": "press@exemple.com"
+    }
+  ]
+}
