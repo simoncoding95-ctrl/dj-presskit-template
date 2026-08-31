@@ -254,7 +254,7 @@ ${has(c.tech) ? `
       ${when(c.booking_email, (m) => `<a class="contact__mail" href="mailto:${esc(m)}?subject=Demande%20de%20date%20%E2%80%94%20${encodeURIComponent(c.artist)}">${esc(m)}</a>`)}
       ${when(c.links, (l) => `<div class="linklist">${l.map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a>`).join("")}</div>`)}
     </div>
-    ${when(c.contacts, (list) => pairs(list.map((p) => [p.role, `${p.name} — ${p.email}`])))}
+    ${when(c.contacts, (list) => pairs(list.map((p) => [p.role, [p.name, p.email, p.phone].filter(Boolean).join(" — ")])))}
   </div>
 </section>
 

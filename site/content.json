@@ -7,10 +7,10 @@
     "000–000 BPM",
     "Label ou collectif"
   ],
-  "hero_image": "assets/photos/placeholder-hero.svg",
-  "hero_credit": "Nom du photographe",
-  "booking_email": "booking@exemple.com",
-  "press_email": "press@exemple.com",
+  "hero_image": "assets/photos/portrait-01.png",
+  "hero_credit": "",
+  "booking_email": "dorian.moreau056@gmail.com",
+  "press_email": "",
   "updated": "31 août 2026",
   "bio_short": "40 à 60 mots, à la 3e personne. C'est la version que les organisateurs copient-collent sur leur event. Des faits : label, résidence, salles, technique. Pas d'adjectifs.",
   "bio_long": [
@@ -42,34 +42,19 @@
   ],
   "photos": [
     {
-      "src": "assets/photos/placeholder-01.svg",
-      "credit": "Photographe",
-      "caption": "Lieu, ville"
+      "src": "assets/photos/portrait-01.png",
+      "credit": "",
+      "caption": "Portrait"
     },
     {
-      "src": "assets/photos/placeholder-02.svg",
-      "credit": "Photographe",
-      "caption": "Lieu, ville"
+      "src": "assets/photos/studio-01.png",
+      "credit": "",
+      "caption": "Studio"
     },
     {
-      "src": "assets/photos/placeholder-03.svg",
-      "credit": "Photographe",
-      "caption": "Lieu, ville"
-    },
-    {
-      "src": "assets/photos/placeholder-04.svg",
-      "credit": "Photographe",
-      "caption": "Lieu, ville"
-    },
-    {
-      "src": "assets/photos/placeholder-05.svg",
-      "credit": "Photographe",
-      "caption": "Lieu, ville"
-    },
-    {
-      "src": "assets/photos/placeholder-06.svg",
-      "credit": "Photographe",
-      "caption": "Lieu, ville"
+      "src": "assets/photos/live-b2b-01.png",
+      "credit": "",
+      "caption": "B2B, live"
     }
   ],
   "sets": [
@@ -221,13 +206,9 @@
   "contacts": [
     {
       "role": "Booking",
-      "name": "Nom",
-      "email": "booking@exemple.com"
-    },
-    {
-      "role": "Presse",
-      "name": "Nom",
-      "email": "press@exemple.com"
+      "name": "Dorian Moreau",
+      "email": "dorian.moreau056@gmail.com",
+      "phone": "07 68 62 88 13"
     }
   ]
 }
