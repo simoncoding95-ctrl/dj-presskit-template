@@ -1,11 +1,11 @@
 {
   "artist": "A.RES",
-  "tagline": "Une ligne qui résume le projet : son, ville, signature",
+  "tagline": "",
   "meta": [
-    "Ville, Pays",
-    "Genre / Genre",
-    "000–000 BPM",
-    "Label ou collectif"
+    "Lille, France",
+    "Minimal / Micro house",
+    "120–130 BPM",
+    "Parallele Universe"
   ],
   "hero_image": "assets/photos/portrait-01.png",
   "hero_credit": "",
@@ -21,15 +21,15 @@
   "facts": [
     [
       "Base",
-      "Ville"
+      "Lille, France"
     ],
     [
       "Tempo",
-      "000–000 BPM"
+      "120–130 BPM"
     ],
     [
       "Label",
-      "Nom"
+      "Parallele Universe"
     ],
     [
       "Résidence",

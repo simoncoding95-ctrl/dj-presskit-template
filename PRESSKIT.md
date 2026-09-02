@@ -1,11 +1,10 @@
 ---
 artist_name: "A.RES"
 real_name: "Dorian Moreau"
-tagline: "[Tagline — 8 à 12 mots max]"
-city: "[Ville, Pays]"
-genres: ["[genre principal]", "[genre secondaire]"]
-bpm_range: "[000–000]"
-label: "[Label / collectif / crew]"
+city: "Lille, France"
+genres: ["minimal", "micro house"]
+bpm_range: "120–130"
+label: "Parallele Universe"
 agency: "Indépendant"
 booking_email: "dorian.moreau056@gmail.com"
 press_email: "dorian.moreau056@gmail.com"
@@ -23,8 +22,7 @@ updated: "2026-09-02"
 
 # A.RES
 
-**[Tagline — 8 à 12 mots max]**
-[Ville, Pays] · [Genre 1] / [Genre 2] · [BPM]
+Lille, France · Minimal / Micro house · 120–130 BPM
 
 <!-- Photo de presse principale. Format paysage 3:2, min. 2000px de large, sans texte incrusté. -->
 ![Photo de presse — crédit : [Nom du photographe]](assets/photos/portrait-01.png)
