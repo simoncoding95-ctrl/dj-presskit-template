@@ -1,9 +1,9 @@
 ---
-artist_name: "NOM D'ARTISTE"
-updated: "2026-08-31"
+artist_name: "A.RES"
+updated: "2026-09-02"
 ---
 
-# Fiche technique — [NOM D'ARTISTE]
+# Fiche technique — A.RES
 
 <!--
   À envoyer avec le contrat, pas avant. Reste réaliste : un rider excessif
@@ -15,10 +15,10 @@ updated: "2026-08-31"
 
 **Indispensable**
 
-- [3 / 4] × Pioneer CDJ-[3000 / 2000NXS2] — liaison link activée
-- 1 × mixer Pioneer DJM-[A9 / 900NXS2 / V10]
+- 4 × Pioneer CDJ-3000 — liaison link activée
+- 1 × mixer Pioneer DJM-A9 ou DJM-900NXS2
 - [2 × platines Technics SL-1200 + cellules, si vinyle]
-- Monitoring : [modèle ou « 2 wedges en cabine, réglés avant l'arrivée »]
+- Monitoring : 2 wedges en cabine, réglés avant l'arrivée
 - Table stable à hauteur [95] cm, cabine éclairée mais pas face au public
 
 **Souhaité**
@@ -28,7 +28,7 @@ updated: "2026-08-31"
 
 **Apporté par l'artiste**
 
-- [Clés USB / laptop + carte son (modèle) / machines]
+- Clés USB
 - [Câbles spécifiques]
 
 ## Son & salle
@@ -39,7 +39,7 @@ updated: "2026-08-31"
 
 ## Timing
 
-- Arrivée sur site : [H-60]
+- Arrivée sur site : 60 min avant le set
 - Check technique : [durée]
 - Créneau : [durée du set], pas de coupure de son avant la fin annoncée.
 
@@ -60,5 +60,5 @@ updated: "2026-08-31"
 
 ## Contact technique
 
-**[Nom]** — [email] — [téléphone]
+**Dorian Moreau** — dorian.moreau056@gmail.com
 Joignable [créneaux].

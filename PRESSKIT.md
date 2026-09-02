@@ -1,17 +1,16 @@
 ---
-artist_name: "NOM D'ARTISTE"
-real_name: "Prénom Nom"
-tagline: "Une ligne qui résume le projet — style, ville, signature sonore"
-city: "Ville, Pays"
-genres: ["genre principal", "genre secondaire", "genre secondaire"]
-bpm_range: "120–135"
-label: "Label / collectif / crew"
-agency: "Agence de booking (ou : indépendant)"
-booking_email: "booking@exemple.com"
-press_email: "press@exemple.com"
-phone: "+33 6 00 00 00 00"
-press_photo: "assets/photos/press-01.jpg"
-updated: "2026-08-31"
+artist_name: "A.RES"
+real_name: "Dorian Moreau"
+tagline: "[Tagline — 8 à 12 mots max]"
+city: "[Ville, Pays]"
+genres: ["[genre principal]", "[genre secondaire]"]
+bpm_range: "[000–000]"
+label: "[Label / collectif / crew]"
+agency: "Indépendant"
+booking_email: "dorian.moreau056@gmail.com"
+press_email: "dorian.moreau056@gmail.com"
+press_photo: "assets/photos/portrait-01.png"
+updated: "2026-09-02"
 ---
 
 <!--
@@ -22,13 +21,13 @@ updated: "2026-08-31"
   4. `./build.sh` génère dist/presskit.html puis le PDF.
 -->
 
-# [NOM D'ARTISTE]
+# A.RES
 
 **[Tagline — 8 à 12 mots max]**
 [Ville, Pays] · [Genre 1] / [Genre 2] · [BPM]
 
 <!-- Photo de presse principale. Format paysage 3:2, min. 2000px de large, sans texte incrusté. -->
-![Photo de presse — crédit : [Nom du photographe]](assets/photos/press-01.jpg)
+![Photo de presse — crédit : [Nom du photographe]](assets/photos/portrait-01.png)
 
 ---
 
@@ -77,9 +76,8 @@ updated: "2026-08-31"
 
 <!-- Les 3 à 5 mixes qui te représentent le mieux. Le premier lien est celui qu'on écoutera vraiment — mets le meilleur en haut. -->
 
-- **[Nom de la série / podcast / radio]** — [année] · [lien]
-- **[Live enregistré au club/festival]** — [année] · [lien]
-- **[Mix]** — [année] · [lien]
+- **A.RES — micro halloween** — 2025 · 54 min · [SoundCloud](https://soundcloud.com/dorian-moreau-453577433/a-res-micro-halloween)
+- **A.RES B2B UNKNOW (JSW)** — 2025 · 59 min · [SoundCloud](https://soundcloud.com/dorian-moreau-453577433/ares-b2b-unknow-jsw)
 
 ---
 
@@ -111,10 +109,8 @@ updated: "2026-08-31"
 
 | Plateforme | Abonnés / auditeurs | Lien |
 |---|---|---|
-| Instagram | [x] | [@handle] |
-| SoundCloud | [x] | [lien] |
-| Spotify | [x auditeurs mensuels] | [lien] |
-| Resident Advisor | — | [lien] |
+| Instagram | [x] | [@a.res_music](https://www.instagram.com/a.res_music/) |
+| SoundCloud | [x] | [profil](https://soundcloud.com/dorian-moreau-453577433) |
 
 *Chiffres au [date].*
 
@@ -122,22 +118,19 @@ updated: "2026-08-31"
 
 ## Liens
 
-- **Site** — [url]
-- **Instagram** — [@handle]
-- **SoundCloud** — [url]
-- **Spotify** — [url]
+- **Instagram** — [@a.res_music](https://www.instagram.com/a.res_music/)
+- **SoundCloud** — [dorian-moreau-453577433](https://soundcloud.com/dorian-moreau-453577433)
 - **Bandcamp** — [url]
+- **Spotify** — [url]
 - **Resident Advisor** — [url]
-- **YouTube** — [url]
 
 ---
 
 ## Contact
 
-**Booking** — [Nom], [booking@exemple.com]
-**Presse** — [Nom], [press@exemple.com]
-**Management** — [Nom], [email]
-**Territoire** — [ex. : Europe / worldwide sauf Amérique du Nord]
+**Booking** — Dorian Moreau, dorian.moreau056@gmail.com
+**Presse** — Dorian Moreau, dorian.moreau056@gmail.com
+**Territoire** — [ex. : Europe / France]
 
 ---
 
@@ -148,8 +141,8 @@ updated: "2026-08-31"
 - Photos HD (libres de droits pour promo, crédit obligatoire) — [lien dossier]
 - Logo / typo du projet (PNG transparent + SVG) — [lien]
 - Fiche technique — voir `TECHNICAL-RIDER.md`
-- Ce presskit en PDF — [lien]
+- Ce presskit en PDF — `presskit.pdf`
 
 ---
 
-*Presskit mis à jour le [date]. Photos : © [photographe]. Merci de ne pas recadrer les visuels ni retirer les crédits.*
+*Presskit mis à jour le 2 septembre 2026. Photos : © [photographe]. Merci de ne pas recadrer les visuels ni retirer les crédits.*
