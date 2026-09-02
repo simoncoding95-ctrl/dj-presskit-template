@@ -4,7 +4,7 @@ real_name: "Dorian Moreau"
 city: "Lille, France"
 genres: ["minimal", "micro house"]
 bpm_range: "120–130"
-label: "Parallele Universe"
+label: "Parallel Universe"
 agency: "Indépendant"
 booking_email: "dorian.moreau056@gmail.com"
 press_email: "dorian.moreau056@gmail.com"
