@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 230" width="200" height="230" role="img" aria-label="Parallel Universe">
+  <rect width="200" height="230" fill="#16150F"/>
+  <g stroke="#EDE9E3" fill="#EDE9E3">
+    <ellipse cx="100" cy="96" rx="78" ry="15" fill="none" stroke-width="6" opacity=".55" transform="rotate(-14 100 96)"/><path d="M83,130.0 L83.0,170.0" fill="none" stroke-width="9" stroke-linecap="round"/><path d="M83.0,170.0 l-11,0" fill="none" stroke-width="9" stroke-linecap="round"/><path d="M117,130.0 L117.0,170.0" fill="none" stroke-width="9" stroke-linecap="round"/><path d="M117.0,170.0 l11,0" fill="none" stroke-width="9" stroke-linecap="round"/><path d="M60.0,104.0 Q22.0,108.0 4.0,58.0" fill="none" stroke-width="9" stroke-linecap="round"/><circle cx="4.0" cy="58.0" r="6.5" stroke="none"/><path d="M140.0,104.0 Q178.0,108.0 196.0,58.0" fill="none" stroke-width="9" stroke-linecap="round"/><circle cx="196.0" cy="58.0" r="6.5" stroke="none"/><circle cx="100" cy="92" r="44" stroke="none"/><circle cx="85" cy="97" r="6" fill="#16150F" stroke="none"/><path d="M108,97 h14" stroke="#16150F" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M56.9,83 A44,44 0 0 1 143.1,83 Z" fill="#16150F" stroke="none"/><path d="M60.9,76 Q10.9,74 10.9,88 Q40.9,90 60.9,87 Z" fill="#16150F" stroke="none"/>
+  </g>
+</svg>

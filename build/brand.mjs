@@ -165,6 +165,7 @@ const html = `<!doctype html>
     <a href="#typo">Typographie</a>
     <a href="#logo">Logo</a>
     <a href="#gabarits">Gabarits</a>
+    <a href="logos">Pistes</a>
     <a class="nav__home" href="/">Presskit A.RES</a>
   </div>
 </nav>
