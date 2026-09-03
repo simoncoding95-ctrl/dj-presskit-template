@@ -1,6 +1,6 @@
 ---
 artist_name: "A.RES"
-updated: "2026-09-02"
+updated: "2026-09-04"
 ---
 
 # Fiche technique — A.RES
@@ -17,31 +17,28 @@ updated: "2026-09-02"
 
 - 4 × Pioneer CDJ-3000 — liaison link activée
 - 1 × mixer Pioneer DJM-A9 ou DJM-900NXS2
-- [2 × platines Technics SL-1200 + cellules, si vinyle]
 - Monitoring : 2 wedges en cabine, réglés avant l'arrivée
-- Table stable à hauteur [95] cm, cabine éclairée mais pas face au public
+- Table stable à hauteur 95 cm, cabine éclairée mais pas face au public
 
 **Souhaité**
 
-- [Effets externes, modèle précis]
-- [Autre]
+- Aucun
 
 **Apporté par l'artiste**
 
 - Clés USB
-- [Câbles spécifiques]
 
 ## Son & salle
 
 - Système : [type, puissance attendue selon jauge]
 - Un ingénieur son présent 30 min avant le set, joignable pendant.
-- Balance / line check : [durée] avant ouverture des portes.
+- Balance / line check : 30 min avant ouverture des portes.
 
 ## Timing
 
 - Arrivée sur site : 60 min avant le set
-- Check technique : [durée]
-- Créneau : [durée du set], pas de coupure de son avant la fin annoncée.
+- Check technique : 20 min
+- Créneau : durée annoncée au contrat, pas de coupure de son avant la fin.
 
 ## Hospitalité
 

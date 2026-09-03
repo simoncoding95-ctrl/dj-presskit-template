@@ -11,12 +11,12 @@
   "hero_credit": "",
   "booking_email": "dorian.moreau056@gmail.com",
   "press_email": "",
-  "updated": "2 septembre 2026",
-  "bio_short": "40 à 60 mots, à la 3e personne. C'est la version que les organisateurs copient-collent sur leur event. Des faits : label, résidence, salles, technique. Pas d'adjectifs.",
+  "updated": "4 septembre 2026",
+  "bio_short": "A.RES joue depuis 2019. Il digge en vinyle et construit ses sets sur des boucles longues, entre 120 et 130 BPM : minimal, micro house. Basé à Lille, il fait partie du collectif Parallel Universe et joue en formats de 1h30 à six heures.",
   "bio_long": [
-    "Paragraphe 1 — l'origine et la trajectoire : comment le projet a démarré, ce qui l'a formé.",
-    "Paragraphe 2 — le son : ce qui se passe concrètement dans un set. Tempo, textures, digging, matériel, façon de construire. C'est le paragraphe qui différencie.",
-    "Paragraphe 3 — l'actualité : sorties récentes, résidence, projet en cours, direction des 12 prochains mois."
+    "A.RES joue depuis 2019, à Lille. Minimal et micro house, entre 120 et 130 BPM.",
+    "Le set se construit sur des boucles longues : les éléments entrent et sortent un par un, la tension monte par accumulation plutôt que par rupture, et un même motif peut tenir plusieurs minutes avant de se déplacer. C'est une écriture qui demande de la durée — d'où les formats de 1h30 à six heures — et une matière première large, qu'il va chercher en diggant du vinyle.",
+    "Il fait partie du collectif lillois Parallel Universe. Deux mixes en ligne en 2025, dont un b2b avec UNKNOW."
   ],
   "facts": [
     [
@@ -24,16 +24,20 @@
       "Lille, France"
     ],
     [
+      "Actif depuis",
+      "2019"
+    ],
+    [
+      "Style",
+      "Minimal, micro house"
+    ],
+    [
       "Tempo",
       "120–130 BPM"
     ],
     [
-      "Label",
+      "Collectif",
       "Parallel Universe"
-    ],
-    [
-      "Résidence",
-      "Lieu, depuis 0000"
     ],
     [
       "Territoire",
@@ -71,44 +75,13 @@
       "note": "Sur demande"
     },
     {
-      "format": "Live / hybride",
-      "length": "00 min",
-      "setup": "Machines, contrôleur, sortie",
-      "note": "Disponibilité"
-    },
-    {
       "format": "B2B",
-      "length": "0h",
+      "length": "2h – 4h",
       "setup": "4 CDJ + DJM",
-      "note": "Avec qui, ou ouvert"
+      "note": "Avec UNKNOW, ou ouvert"
     }
   ],
-  "releases": [
-    {
-      "year": "0000",
-      "title": "Titre",
-      "artist": "EP / Album / VA / Remix",
-      "label": "Label",
-      "art": "assets/artwork/placeholder-01.svg",
-      "url": ""
-    },
-    {
-      "year": "0000",
-      "title": "Titre",
-      "artist": "EP / Album / VA / Remix",
-      "label": "Label",
-      "art": "assets/artwork/placeholder-02.svg",
-      "url": ""
-    },
-    {
-      "year": "0000",
-      "title": "Titre",
-      "artist": "EP / Album / VA / Remix",
-      "label": "Label",
-      "art": "assets/artwork/placeholder-03.svg",
-      "url": ""
-    }
-  ],
+  "releases": [],
   "mixes": [
     {
       "title": "A.RES — micro halloween",
@@ -125,38 +98,8 @@
       "soundcloud_id": "2169966045"
     }
   ],
-  "dates": [
-    {
-      "group": "Festivals",
-      "items": [
-        "Festival, ville",
-        "Festival, ville",
-        "Festival, ville"
-      ]
-    },
-    {
-      "group": "Clubs",
-      "items": [
-        "Club, ville",
-        "Club, ville",
-        "Club, ville"
-      ]
-    },
-    {
-      "group": "Résidences",
-      "items": [
-        "Lieu, ville — périodicité, depuis 0000"
-      ]
-    }
-  ],
-  "press": [
-    {
-      "quote": "Citation réelle et vérifiable, une à deux phrases. Supprime la section tant que tu n'en as pas.",
-      "source": "Média",
-      "date": "mois année",
-      "url": ""
-    }
-  ],
+  "dates": [],
+  "press": [],
   "tech": [
     [
       "Platines",
@@ -179,7 +122,7 @@
       "60 min avant le set"
     ]
   ],
-  "rider_url": "technical-rider.pdf",
+  "rider_url": "",
   "pdf_url": "presskit.pdf",
   "links": [
     {
@@ -189,18 +132,6 @@
     {
       "label": "SoundCloud",
       "url": "https://soundcloud.com/dorian-moreau-453577433"
-    },
-    {
-      "label": "Bandcamp",
-      "url": ""
-    },
-    {
-      "label": "Spotify",
-      "url": ""
-    },
-    {
-      "label": "Resident Advisor",
-      "url": ""
     }
   ],
   "contacts": [
