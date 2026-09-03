@@ -109,3 +109,40 @@ Pour visualiser l'exemple fourni :
 ```bash
 node build/render.mjs examples/EXEMPLE-REMPLI.md dist/exemple.html
 ```
+
+## Routes du site
+
+`npm run build` produit quatre pages dans `dist/site/`. Vercel sert le dossier avec
+`cleanUrls`, donc `brand.html` répond sur `/brand`.
+
+| Route | Source | Contenu |
+|---|---|---|
+| `/` | `build/site.mjs` + `site/content.json` | Presskit A.RES, direction artistique d'origine |
+| `/exemple` | `build/site.mjs` + `site/content.example.json` | Le gabarit rempli, pour référence |
+| `/brand` | `build/brand.mjs` | Charte graphique Parallel Universe : palette, typo, logo, gabarits |
+| `/artistes/a-res` | `build/artiste.mjs` + `site/content.json` | La même fiche artiste, à la charte du label |
+
+`/` et `/artistes/a-res` lisent le **même** `content.json` : deux directions artistiques sur
+une seule source de contenu. C'est volontaire — la page artiste sert de prototype au futur
+site du label, et on compare les deux sans dupliquer les données.
+
+`build/label.css` porte le socle de la charte (tokens, nav, sections, pied de page). Il est
+partagé par `/brand` et `/artistes/a-res` ; chaque page y ajoute son CSS propre.
+
+### Ce que la page artiste masque
+
+`build/artiste.mjs` détecte les valeurs restées au stade du gabarit — « Paragraphe 1 — … »,
+« 40 à 60 mots… », « 00 min » — et **masque la section** au lieu de l'afficher vide. Un
+bandeau en haut de page liste ce qui manque.
+
+C'est un garde-fou, pas une fonctionnalité : dès que `content.json` est réellement rempli,
+le bandeau disparaît de lui-même. **Ne pas mettre cette page en avant auprès d'un booker
+tant que le bandeau est visible.**
+
+### Assets de marque
+
+`site/brand-assets/` contient une copie des logos, gabarits et de la charte PDF issus de
+`../../brand/`. La copie rend le dépôt autonome, mais c'est une **dette assumée** : ce dépôt
+est un gabarit réutilisable pour d'autres artistes, et il embarque aujourd'hui la marque d'un
+label précis. À déplacer vers le site Parallel Universe une fois celui-ci en ligne — deadline
+du 2 octobre au plan marketing.
