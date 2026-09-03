@@ -22,9 +22,9 @@ Lille, France · Minimal / Micro house · 120–130 BPM
 
 ## Bio courte
 
-A.RES joue depuis 2019. Il digge en vinyle et construit ses sets sur des boucles longues,
-entre 120 et 130 BPM : minimal, micro house. Basé à Lille, il fait partie du collectif
-Parallel Universe et joue en formats de 1h30 à six heures.
+A.RES joue depuis 2019. Il digge en vinyle, joue en numérique, et construit ses sets sur
+des boucles longues, entre 120 et 130 BPM : minimal, micro house. Basé à Lille, il fait
+partie du collectif Parallel Universe et joue en formats de 1h30 à six heures.
 
 ## Bio longue
 
@@ -34,7 +34,7 @@ Le set se construit sur des boucles longues : les éléments entrent et sortent 
 la tension monte par accumulation plutôt que par rupture, et un même motif peut tenir
 plusieurs minutes avant de se déplacer. C'est une écriture qui demande de la durée — d'où
 les formats de 1h30 à six heures — et une matière première large, qu'il va chercher en
-diggant du vinyle.
+diggant du vinyle avant de la jouer en numérique.
 
 Il fait partie du collectif lillois Parallel Universe. Deux mixes en ligne en 2025, dont un
 b2b avec UNKNOW.
@@ -45,9 +45,12 @@ b2b avec UNKNOW.
 
 | Format | Durée | Setup | Note |
 |---|---|---|---|
-| DJ set | 1h30 – 3h | 4 CDJ + DJM | Format standard |
-| Extended | 4h – 6h | 4 CDJ + DJM | Sur demande |
-| B2B | 2h – 4h | 4 CDJ + DJM | Avec UNKNOW, ou ouvert |
+| DJ set | 1h30 – 3h | Matériel du lieu | Format standard |
+| Extended | 4h – 6h | Matériel du lieu | Sur demande |
+| B2B | 2h – 4h | Matériel du lieu | Avec UNKNOW, ou ouvert |
+
+**A.RES joue sur le matériel du lieu.** Deux lecteurs et un mixer suffisent, pas de platines
+vinyle à prévoir. Détail dans la fiche technique.
 
 ## Repères
 

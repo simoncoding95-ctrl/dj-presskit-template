@@ -5,57 +5,49 @@ updated: "2026-09-04"
 
 # Fiche technique — A.RES
 
-<!--
-  À envoyer avec le contrat, pas avant. Reste réaliste : un rider excessif
-  fait perdre des dates sur les petites structures. Marque clairement ce qui
-  est indispensable et ce qui est souhaité.
--->
+**A.RES joue sur le matériel du lieu.** Rien n'est à louer, rien n'est à faire venir.
+Cette fiche dit ce qui suffit, pas ce qui serait idéal.
 
-## Setup DJ
+---
 
-**Indispensable**
+## Ce qu'il faut
 
-- 4 × Pioneer CDJ-3000 — liaison link activée
-- 1 × mixer Pioneer DJM-A9 ou DJM-900NXS2
-- Monitoring : 2 wedges en cabine, réglés avant l'arrivée
-- Table stable à hauteur 95 cm, cabine éclairée mais pas face au public
+- **2 lecteurs** — CDJ, XDJ, ou équivalent lisant une clé USB
+- **1 mixer** — 2 voies suffisent
+- **1 retour** en cabine, réglé avant l'arrivée
+- Une table stable, une prise, un point d'éclairage qui ne soit pas dans les yeux
 
-**Souhaité**
+Si le lieu dispose de 4 CDJ et d'un DJM, tant mieux : le set en profite. Ce n'est pas
+une condition.
 
-- Aucun
+## Ce qu'il n'y a pas besoin de prévoir
 
-**Apporté par l'artiste**
+- **Pas de platines vinyle.** A.RES digge en vinyle mais joue en numérique.
+- Pas d'effets externes, pas de contrôleur, pas de machines.
+- Pas de technicien dédié.
 
-- Clés USB
+## Apporté par l'artiste
 
-## Son & salle
+- Clés USB, préparées et testées
+- Un casque
 
-- Système : [type, puissance attendue selon jauge]
-- Un ingénieur son présent 30 min avant le set, joignable pendant.
-- Balance / line check : 30 min avant ouverture des portes.
+---
 
-## Timing
+## Déroulé
 
-- Arrivée sur site : 60 min avant le set
-- Check technique : 20 min
-- Créneau : durée annoncée au contrat, pas de coupure de son avant la fin.
+- **Arrivée** : 60 min avant le set
+- **Check** : 15 min sur le matériel en place suffisent
+- **Créneau** : la durée annoncée au contrat, sans coupure de son avant la fin
 
-## Hospitalité
+## Sur place
 
-<!-- Sois précis et modeste. Les allergies et l'accessibilité vont ici. -->
+Une boisson et un accès aux toilettes. Rien d'autre n'est demandé.
 
-- Loge fermant à clé, accès eau et sanitaires.
-- [X] boissons : [détail]
-- Repas chaud : [préférences / régime / allergies]
-- [Accès PMR, besoins spécifiques]
+Pour les dates hors métropole lilloise, le transport et l'hébergement se discutent au
+contrat, au cas par cas.
 
-## Voyage & hébergement
+---
 
-- Transport : [pris en charge par l'organisateur / à préciser au contrat]
-- Hébergement : hôtel [catégorie], [nombre] nuit(s), chambre [single/double], à [X] min du lieu.
-- Accompagnant : [0 / 1 personne — tour manager / technicien]
+## Contact
 
-## Contact technique
-
-**Dorian Moreau** — dorian.moreau056@gmail.com
-Joignable [créneaux].
+Dorian Moreau — dorian.moreau056@gmail.com
