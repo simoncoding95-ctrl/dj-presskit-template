@@ -199,7 +199,7 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 <div class="shell">
 <aside class="rail">
   <a href="${up}/brand" aria-label="Parallel Universe, la charte">
-    <img class="rail__logo" src="${up}/brand-assets/logo/shift-en-2lines-paper.svg"
+    <img class="rail__logo" src="${up}/brand-assets/logo/logo-2lines-paper.svg"
          alt="Parallel Universe" width="132" height="60"></a>
 
   <div class="rail__id">

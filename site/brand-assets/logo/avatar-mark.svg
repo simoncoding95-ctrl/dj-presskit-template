@@ -8,27 +8,8 @@
   </defs>
   <rect width="1000" height="1000" fill="#1A1917"/>
   <circle cx="500.0" cy="500.0" r="490" fill="url(#vinyl)"/>
-  <g>
-    <circle cx="500.0" cy="500.0" r="316" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="325" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="334" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="343" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="352" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="361" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="370" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="379" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="388" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="397" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="406" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="415" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="424" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="433" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="442" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="451" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="460" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="469" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    <circle cx="500.0" cy="500.0" r="478" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/>
-    </g>
+  <g><circle cx="500.0" cy="500.0" r="316" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="325" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="334" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="343" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="352" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="361" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="370" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="379" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="388" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="397" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="406" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="415" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="424" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="433" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="442" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="451" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="460" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="469" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/><circle cx="500.0" cy="500.0" r="478" fill="none" stroke="#EDE9E3" stroke-opacity=".05" stroke-width="1.1"/></g>
   <circle cx="500.0" cy="500.0" r="300" fill="#EDE9E3"/>
+  
   <circle cx="500.0" cy="500.0" r="39" fill="#1A1917"/>
 </svg>
