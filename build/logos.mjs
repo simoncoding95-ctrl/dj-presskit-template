@@ -11,16 +11,16 @@ const SRC = join(root, "site/brand-assets/concepts");
 const A = "brand-assets/concepts";
 
 const NOTES = {
-  "01-base": ["Base", "La proposition telle quelle : anneaux devenus bras, planète pleine, casquette. La plus directe."],
-  "02-trait": ["Trait", "Tout au contour. Plus léger, tient mieux en petit et à l'impression une couleur."],
-  "03-incline": ["Anneau incliné", "L'anneau franchement penché, bras plus hauts. Plus de mouvement, silhouette moins stable."],
-  "04-clin": ["Clin d'œil", "Un œil fermé, visière à gauche. Le plus chaleureux, le moins sérieux."],
-  "05-marche": ["En marche", "Jambes décalées, yeux en traits. Suggère le déplacement — utile en animation."],
-  "06-papier": ["Sur papier", "Le même, inversé pour les fonds clairs. À vérifier : la casquette s'y lit autrement."],
-  "07-accent": ["Casquette olive", "La seule qui reste lisible sur n'importe quel fond. Consomme l'accent de la charte."],
-  "08-badge": ["Badge", "Enfermé dans un cercle. Pour un avatar, un tampon, une sérigraphie."],
-  "09-tete": ["Tête seule", "Sans corps. Le seul qui tienne à 32 px, là où les jambes deviennent une bouillie."],
-  "10-signature": ["Signature", "Mascotte et nom réunis. Le nom est ici tracé au trait — le logotype réel est en /brand."],
+  "01-bandeau": ["Bandeau", "Le nom porté par un parallèle épaissi. Pose posée, lecture immédiate : la version qui sert de référence."],
+  "02-danse": ["Danse", "Bras dissymétriques, appui déporté, corps penché. Le mouvement vient des angles, pas d'un effet."],
+  "03-trait": ["Trait", "Globe au contour, sans aplat. Plus léger, meilleur en petit et en sérigraphie une couleur."],
+  "04-arc": ["Arc", "Le nom courbé au-dessus, bras levés en écho. Le plus proche d'une étiquette de disque."],
+  "05-elan": ["Élan", "Bras tendu haut, nom sur deux lignes dont une en olive. La plus verticale, bonne en story."],
+  "06-horizontal": ["Horizontal", "Mascotte à gauche, nom à droite. Le format des en-têtes, des signatures et des bandeaux."],
+  "07-badge": ["Badge", "Cerclé, nom en arc. Pour un tampon, un sticker, une pastille de vinyle."],
+  "08-papier": ["Sur papier", "L'inverse, pour les fonds clairs. La casquette prend un liseré, sinon elle fusionne avec le globe."],
+  "09-encre": ["Casquette encre", "Sans accent de couleur. Tient en une seule encre, mais dépend du liseré pour se détacher."],
+  "10-compact": ["Compact", "Nom réduit sous la figure. C'est la version à tester en favicon et en avatar."],
 };
 
 const files = readdirSync(SRC).filter((f) => f.endsWith(".svg")).sort();
@@ -61,8 +61,11 @@ footer a{color:var(--muted)}
 `;
 
 const cards = files.map((f, i) => {
-  const key = f.replace(".svg", "");
-  const [title, note] = NOTES[key] ?? [key, ""];
+  // Les accents d'une clé ne survivent pas au nom de fichier : on compare à plat.
+  const flat = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const key = flat(f.replace(".svg", ""));
+  const entry = Object.entries(NOTES).find(([k]) => flat(k) === key);
+  const [title, note] = entry ? entry[1] : [key, ""];
   return `
   <div class="card">
     <div class="card__top">
@@ -95,8 +98,8 @@ const html = `<!doctype html>
 <body>
 <header class="wrap">
   <h1>Dix pistes de mascotte</h1>
-  <p class="lede">Une planète à deux jambes et deux bras, <b>les anneaux prolongés en bras tendus</b>, deux yeux et une casquette. Toutes les pistes partagent la même géométrie : ce qui change, c'est le traitement — plein ou contour, inclinaison, expression, mise en situation.</p>
-  <p class="lede">Elles sont dessinées dans la charte du label : deux couleurs, traits épais, aucun aplat superflu. L'enjeu n'est pas qu'elles soient jolies en grand, mais qu'elles restent lisibles en petit — d'où les vignettes à 56 et 32 px sous chacune.</p>
+  <p class="lede">Un globe fait de ses <b>parallèles</b> — le nom du label, dessiné — sur deux jambes, deux bras tendus et une casquette. Le nom fait partie du logo dans les dix pistes. Ce qui change : la pose, le traitement du globe, et la façon dont le nom s'accroche.</p>
+  <p class="lede">Un parallèle est laissé vierge à hauteur des yeux : sans cette réserve, le visage se noie dans les lignes du globe. Les yeux sont des barres et non des pastilles — les pastilles rondes font emoji. L'enjeu n'est pas qu'elles soient jolies en grand, mais qu'elles tiennent en petit : d'où les vignettes à 56 et 32 px.</p>
   <div class="warn"><b>Page interne</b>
   Elle sert à choisir avant lancement. La mascotte est une direction opposée au logotype sobre de <a href="brand">la charte</a> : les deux peuvent coexister, le logotype signant les documents et la mascotte portant le côté collectif — mais il faut le décider, sinon on se retrouve avec deux marques.</div>
 </header>

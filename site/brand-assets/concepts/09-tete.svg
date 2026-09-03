@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Parallel Universe">
-  <rect width="200" height="200" fill="#16150F"/>
-  <g stroke="#EDE9E3" fill="#EDE9E3">
-    <circle cx="100" cy="92" r="44" stroke="none"/><circle cx="85" cy="97" r="6" fill="#16150F" stroke="none"/><circle cx="115" cy="97" r="6" fill="#16150F" stroke="none"/><path d="M56.9,83 A44,44 0 0 1 143.1,83 Z" fill="#16150F" stroke="none"/><path d="M139.1,76 Q189.1,74 189.1,88 Q159.1,90 139.1,87 Z" fill="#16150F" stroke="none"/>
-  </g>
-</svg>
