@@ -103,7 +103,7 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pistes de mascotte — Parallel Universe</title>
+<title>Pistes de mascotte — Universe Parallele</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="brand-assets/logo/avatar-mark-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -131,7 +131,7 @@ const html = `<!doctype html>
 </div>
 
 <footer class="wrap">
-  <span>Parallel Universe — Lille</span>
+  <span>Universe Parallele — Lille</span>
   <span>Pistes, septembre 2026</span>
   <a href="brand">Charte graphique</a>
   <a href="artistes/a-res">Presskit A.RES</a>
