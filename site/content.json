@@ -12,11 +12,11 @@
   "booking_email": "dorian.moreau056@gmail.com",
   "press_email": "",
   "updated": "4 septembre 2026",
-  "bio_short": "A.RES joue depuis 2019. Il digge en vinyle, joue en numérique, et construit ses sets sur des boucles longues, entre 120 et 130 BPM : minimal, micro house. Basé à Lille, il fait partie du collectif Parallel Universe et joue en formats de 1h30 à six heures.",
+  "bio_short": "A.RES joue depuis 2019. Il construit ses sets sur des boucles longues, entre 120 et 130 BPM : minimal, micro house. Basé à Lille, il fait partie du collectif Parallel Universe et joue en formats de 1h30 à six heures.",
   "bio_long": [
     "A.RES joue depuis 2019, à Lille. Minimal et micro house, entre 120 et 130 BPM.",
-    "Le set se construit sur des boucles longues : les éléments entrent et sortent un par un, la tension monte par accumulation plutôt que par rupture, et un même motif peut tenir plusieurs minutes avant de se déplacer. C'est une écriture qui demande de la durée — d'où les formats de 1h30 à six heures — et une matière première large, qu'il va chercher en diggant du vinyle avant de la jouer en numérique.",
-    "Il fait partie du collectif lillois Parallel Universe. Deux mixes en ligne en 2025, dont un b2b avec UNKNOW."
+    "Le set se construit sur des boucles longues : les éléments entrent et sortent un par un, la tension monte par accumulation plutôt que par rupture, et un même motif peut tenir plusieurs minutes avant de se déplacer. C'est une écriture qui demande de la durée — d'où les formats de 1h30 à six heures.",
+    "Il fait partie du collectif lillois Parallel Universe. Plusieurs productions micro et plusieurs mixes en ligne."
   ],
   "facts": [
     [
@@ -58,7 +58,7 @@
     {
       "src": "assets/photos/live-b2b-01.png",
       "credit": "",
-      "caption": "B2B, live"
+      "caption": "Live"
     }
   ],
   "sets": [
@@ -73,12 +73,6 @@
       "length": "4h – 6h",
       "setup": "Matériel du lieu",
       "note": "Sur demande"
-    },
-    {
-      "format": "B2B",
-      "length": "2h – 4h",
-      "setup": "Matériel du lieu",
-      "note": "Avec UNKNOW, ou ouvert"
     }
   ],
   "releases": [],
@@ -114,12 +108,8 @@
       "4 CDJ + DJM, si le lieu en dispose"
     ],
     [
-      "Vinyle",
-      "Non — aucune platine nécessaire"
-    ],
-    [
-      "Apporté",
-      "Clés USB"
+      "Lecture",
+      "Clés USB uniquement"
     ],
     [
       "Monitoring",
