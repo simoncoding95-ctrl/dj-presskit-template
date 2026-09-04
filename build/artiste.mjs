@@ -86,7 +86,10 @@ a{color:var(--olive)}
 .shell{display:grid;grid-template-columns:var(--rail) 1fr;min-height:100vh}
 .rail{position:sticky;top:0;align-self:start;height:100vh;padding:38px 32px;
   border-right:1px solid var(--line);display:flex;flex-direction:column;gap:26px}
-.rail__logo{width:132px;opacity:.92}
+/* La mascotte contient déjà le nom : le logotype ne l'accompagne jamais.
+   Sous 100 px elle devient illisible, d'où la bascule sur le logotype en mobile. */
+.rail__mascotte{width:210px;height:auto;display:block;opacity:.95}
+.rail__logo{display:none}
 .rail__id{margin-bottom:auto}
 .rail__name{font-size:29px;font-weight:700;font-stretch:62%;letter-spacing:.01em;line-height:1}
 .rail__spec{margin-top:16px;font-size:12.5px;color:var(--muted);line-height:1.75}
@@ -166,7 +169,8 @@ footer a{color:var(--muted)}
   .shell{grid-template-columns:1fr}
   .rail{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);
     flex-direction:row;align-items:center;gap:18px;padding:18px clamp(24px,4.5vw,68px)}
-  .rail__logo{width:104px}
+  .rail__mascotte{display:none}
+  .rail__logo{display:block;width:184px;height:auto}
   .rail__id,.rail__spec,.rail__dl,.rail__soc,.rail .book{display:none}
   main{padding-bottom:104px}
   /* Le bouton reste sous le pouce : c'est la seule action de la page. */
@@ -199,8 +203,10 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 <div class="shell">
 <aside class="rail">
   <a href="${up}/brand" aria-label="Univers Parallele, la charte">
-    <img class="rail__logo" src="${up}/brand-assets/logo/logo-2lines-paper.svg"
-         alt="Univers Parallele" width="132" height="60"></a>
+    <img class="rail__mascotte" src="${up}/brand-assets/logo/mascotte-paper.svg"
+         alt="Univers Parallele" width="1088" height="982">
+    <img class="rail__logo" src="${up}/brand-assets/logo/logo-1line-paper.svg"
+         alt="Univers Parallele" width="240" height="42"></a>
 
   <div class="rail__id">
     <div class="rail__name">${esc(c.artist)}</div>
