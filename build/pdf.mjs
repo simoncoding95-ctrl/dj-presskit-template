@@ -38,7 +38,7 @@ const qr = file("site/qr-soundcloud.svg")
   .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:100%;height:auto;display:block"');
 const mascotte = file("site/brand-assets/logo/mascotte-ink.svg")
   .replace(/<\?xml[^>]*\?>/, "")
-  .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:34mm;height:auto;display:block"');
+  .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:29mm;height:auto;display:block"');
 
 const rows = (list) => `<dl class="spec">${list.map(([k, v]) =>
   `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>`;
@@ -69,7 +69,7 @@ em{font-style:normal;color:var(--olive)}
   display:block;filter:grayscale(1) contrast(1.06)}
 
 .listen{display:grid;grid-template-columns:26mm 1fr;gap:8mm;align-items:start;
-  background:var(--shade);padding:7mm;margin-top:9mm}
+  background:var(--shade);padding:6mm;margin-top:7mm}
 .listen__qr{width:26mm}
 .mix{display:flex;justify-content:space-between;gap:6mm;font-size:9pt;padding:1.6mm 0;
   border-bottom:.4pt solid var(--line)}
@@ -77,8 +77,7 @@ em{font-style:normal;color:var(--olive)}
 .mix span{color:var(--muted);font-size:8pt;white-space:nowrap}
 .mix a{color:var(--ink);text-decoration:none}
 
-.book{margin-top:auto;padding-top:7mm;border-top:1pt solid var(--ink);
-  display:grid;grid-template-columns:1fr auto;gap:8mm;align-items:end}
+.book{margin-top:auto;padding-top:6mm;border-top:1pt solid var(--ink)}
 .book__mail{font-size:15pt;font-weight:600;color:var(--olive);text-decoration:none}
 .book__who{font-size:8.5pt;color:var(--muted);margin-bottom:1mm}
 
@@ -104,7 +103,8 @@ em{font-style:normal;color:var(--olive)}
 .links a{color:var(--olive);text-decoration:none}
 .foot{margin-top:auto;padding-top:5mm;border-top:.5pt solid var(--line);
   display:flex;justify-content:space-between;align-items:flex-end;gap:8mm}
-.sig{opacity:.9}
+.sig{opacity:.92}
+.sig--top{margin-bottom:5mm}
 `;
 
 const html = `<!doctype html>
@@ -120,6 +120,8 @@ const html = `<!doctype html>
 <body>
 
 <section class="sheet">
+  <div class="sig sig--top">${mascotte}</div>
+
   <div class="top">
     <div style="min-width:0">
       <h1>${esc(c.artist)}</h1>
@@ -151,7 +153,6 @@ const html = `<!doctype html>
       <div class="book__who">${esc(booking.role)} — ${esc(booking.name)}</div>
       <a class="book__mail" href="mailto:${esc(booking.email)}">${esc(booking.email)}</a>
     </div>
-    <div class="sig">${mascotte}</div>
   </div>` : ""}
 </section>
 
