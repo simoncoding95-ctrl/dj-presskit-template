@@ -3,15 +3,13 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-DOCS=("PRESSKIT.md:presskit" "TECHNICAL-RIDER.md:technical-rider")
+DOCS=("TECHNICAL-RIDER.md:technical-rider")   # le presskit passe par build/pdf.mjs
 
 for entry in "${DOCS[@]}"; do
   node build/render.mjs "${entry%%:*}" "dist/${entry##*:}.html"
 done
 
 # Le site : content.json est le vôtre, content.example.json sert de référence de remplissage.
-node build/site.mjs site/content.json dist/site/index.html
-node build/site.mjs site/content.example.json dist/site/exemple.html
 
 find_chrome() {
   for c in google-chrome google-chrome-stable chromium chromium-browser microsoft-edge; do

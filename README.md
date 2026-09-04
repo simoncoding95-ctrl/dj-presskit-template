@@ -154,3 +154,26 @@ tant que le bandeau est visible.**
 est un gabarit réutilisable pour d'autres artistes, et il embarque aujourd'hui la marque d'un
 label précis. À déplacer vers le site Univers Parallele une fois celui-ci en ligne — deadline
 du 2 octobre au plan marketing.
+
+## Le presskit PDF
+
+`npm run build` produit `dist/presskit.html`, converti en PDF par `build.sh` (ou Ctrl+P), et
+copié dans `site/downloads/` d'où le site le sert.
+
+Il lit **`site/content.json`**, la même source que la page. Avant, `PRESSKIT.md` disait la
+même chose en parallèle et il fallait éditer les deux à chaque changement de bio — le
+document a divergé plusieurs fois. Ce fichier reste dans le dépôt comme référence lisible,
+mais il ne produit plus rien.
+
+Trois écarts assumés avec la page web, parce qu'un PDF n'est pas un écran :
+
+- **Palette papier**, pas la sombre. La charte la réserve aux documents imprimés ; un A4 en
+  fond sombre vide une cartouche.
+- **Un QR code** vers le SoundCloud. Sur un document imprimé c'est le seul moyen d'écouter,
+  et écouter est tout le travail de ce presskit. `site/qr-soundcloud.svg`, regénéré avec
+  `segno` si l'URL change.
+- **Deux pages, la première autosuffisante.** Nom, photo, bio courte, écoute, repères et
+  adresse de booking y tiennent : un programmateur qui n'ouvre pas la seconde a l'essentiel.
+
+Les deux feuilles remplissent exactement 297 mm. Ajouter du contenu fait déborder la
+seconde — vérifier après toute modification.
