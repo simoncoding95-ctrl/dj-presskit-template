@@ -22,9 +22,7 @@ Lille, France · Minimal / Micro house · 120–130 BPM
 
 ## Bio courte
 
-A.RES joue depuis 2019. Il construit ses sets sur des boucles longues, entre 120 et 130 BPM :
-minimal, micro house. Basé à Lille, il fait partie du collectif Parallel Universe et joue en
-formats de 1h30 à six heures.
+A.RES joue depuis 2019. Entre 120 et 130 BPM : minimal, micro house. Basé à Lille, il est fondateur du collectif Parallel Universe et joue en formats de 1h30 à six heures.
 
 ## Bio longue
 
@@ -35,8 +33,8 @@ la tension monte par accumulation plutôt que par rupture, et un même motif peu
 plusieurs minutes avant de se déplacer. C'est une écriture qui demande de la durée — d'où
 les formats de 1h30 à six heures.
 
-Il fait partie du collectif lillois Parallel Universe. Plusieurs productions micro
-et plusieurs mixes en ligne.
+Fondateur du collectif lillois Parallel Universe. Plusieurs productions micro et
+plusieurs mixes en ligne.
 
 ---
 
@@ -58,7 +56,7 @@ clés USB. Détail dans la fiche technique.
 | Actif depuis | 2019 |
 | Style | Minimal, micro house |
 | Tempo | 120–130 BPM |
-| Collectif | Parallel Universe |
+| Collectif | Parallel Universe, fondateur |
 | Territoire | Europe |
 
 ---
