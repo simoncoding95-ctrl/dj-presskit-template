@@ -8,7 +8,7 @@
   ],
   "hero_image": "assets/photos/portrait-01.png",
   "hero_credit": "",
-  "booking_email": "dorian.moreau056@gmail.com",
+  "booking_email": "booking@universparallele.fr",
   "press_email": "",
   "updated": "4 septembre 2026",
   "bio_short": "A.RES joue depuis 2019. Entre 120 et 130 BPM : minimal, micro house. Basé à Lille, il est fondateur du collectif Univers Parallele et joue en formats de 1h30 à six heures.",
@@ -134,8 +134,8 @@
   "contacts": [
     {
       "role": "Booking",
-      "name": "Dorian Moreau",
-      "email": "dorian.moreau056@gmail.com"
+      "name": "Univers Parallele",
+      "email": "booking@universparallele.fr"
     }
   ]
 }

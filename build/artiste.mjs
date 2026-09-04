@@ -1,7 +1,7 @@
 // Fiche artiste à la charte du label. Un seul objectif : déclencher une demande de date.
 // Usage : node build/artiste.mjs site/content.json dist/site/artistes/a-res.html
 import { readFileSync, writeFileSync, existsSync, mkdirSync, cpSync } from "node:fs";
-import { dirname, resolve, join } from "node:path";
+import { dirname, resolve, join, relative } from "node:path";
 
 const [, , contentPath = "site/content.json",
           outputPath = "dist/site/artistes/a-res.html"] = process.argv;
@@ -9,7 +9,12 @@ const root = process.cwd();
 const c = JSON.parse(readFileSync(resolve(root, contentPath), "utf8"));
 const outAbs = resolve(root, outputPath);
 const outDir = dirname(outAbs);
-const up = "..";
+
+/* La page peut vivre à la racine du site ou dans un sous-dossier :
+   on en déduit le préfixe des liens et l'emplacement des assets. */
+const SITE_ROOT = resolve(root, "dist/site");
+const depth = relative(SITE_ROOT, outDir).split(/[\\/]/).filter(Boolean).length;
+const up = depth ? Array(depth).fill("..").join("/") : ".";
 
 const esc = (s = "") => String(s)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -202,11 +207,10 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 
 <div class="shell">
 <aside class="rail">
-  <a href="${up}/brand" aria-label="Univers Parallele, la charte">
-    <img class="rail__mascotte" src="${up}/brand-assets/logo/mascotte-paper.svg"
-         alt="Univers Parallele" width="1088" height="982">
-    <img class="rail__logo" src="${up}/brand-assets/logo/logo-1line-paper.svg"
-         alt="Univers Parallele" width="240" height="42"></a>
+  <img class="rail__mascotte" src="${up}/brand-assets/logo/mascotte-paper.svg"
+       alt="Univers Parallele" width="1088" height="982">
+  <img class="rail__logo" src="${up}/brand-assets/logo/logo-1line-paper.svg"
+       alt="Univers Parallele" width="240" height="42">
 
   <div class="rail__id">
     <div class="rail__name">${esc(c.artist)}</div>
@@ -280,7 +284,6 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
   <footer>
     <span>${esc(c.artist)} — Univers Parallele, Lille</span>
     ${when(c.updated, (u) => `<span>Mis à jour le ${esc(u)}</span>`)}
-    <a href="${up}/brand">Charte graphique</a>
   </footer>
 </main>
 </div>
@@ -294,10 +297,14 @@ ${bookingHref ? `<div class="mob"><a class="book" href="${bookingHref}">Demander
 if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
 writeFileSync(outAbs, html, "utf8");
 
-const src = join(root, "assets");
-const dest = join(outDir, "..", "assets");
-if (existsSync(src) && !existsSync(dest)) {
-  cpSync(src, dest, { recursive: true, filter: (f) => !f.toLowerCase().endsWith(".md") });
+const notDoc = (f) => !f.toLowerCase().endsWith(".md");
+for (const [from, to] of [
+  ["assets", join(SITE_ROOT, "assets")],                            // photos
+  ["site/brand-assets/logo", join(SITE_ROOT, "brand-assets/logo")], // mascotte, logotype, favicon
+  ["site/downloads", SITE_ROOT],                                    // presskit PDF
+]) {
+  const s = join(root, from);
+  if (existsSync(s)) cpSync(s, to, { recursive: true, filter: notDoc });
 }
 
 console.log(`✓ ${outputPath}${missing.length ? `  (masqué : ${missing.join(", ")})` : ""}`);

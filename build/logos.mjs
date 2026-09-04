@@ -134,7 +134,7 @@ const html = `<!doctype html>
   <span>Univers Parallele — Lille</span>
   <span>Pistes, septembre 2026</span>
   <a href="brand">Charte graphique</a>
-  <a href="artistes/a-res">Presskit A.RES</a>
+  <a href="/">Presskit A.RES</a>
 </footer>
 </body>
 </html>

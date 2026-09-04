@@ -112,22 +112,30 @@ node build/render.mjs examples/EXEMPLE-REMPLI.md dist/exemple.html
 
 ## Routes du site
 
-`npm run build` produit quatre pages dans `dist/site/`. Vercel sert le dossier avec
-`cleanUrls`, donc `brand.html` répond sur `/brand`.
+`npm run build` ne produit qu'**une seule page** : la fiche A.RES, servie à la racine.
 
-| Route | Source | Contenu |
-|---|---|---|
-| `/` | `build/site.mjs` + `site/content.json` | Presskit A.RES, direction artistique d'origine |
-| `/exemple` | `build/site.mjs` + `site/content.example.json` | Le gabarit rempli, pour référence |
-| `/brand` | `build/brand.mjs` | Charte graphique Univers Parallele : palette, typo, logo, gabarits |
-| `/artistes/a-res` | `build/artiste.mjs` + `site/content.json` | La même fiche artiste, à la charte du label |
+| Route | Source |
+|---|---|
+| `/` | `build/artiste.mjs` + `site/content.json` |
 
-`/` et `/artistes/a-res` lisent le **même** `content.json` : deux directions artistiques sur
-une seule source de contenu. C'est volontaire — la page artiste sert de prototype au futur
-site du label, et on compare les deux sans dupliquer les données.
+`/artistes/a-res` redirige en 301 vers `/`, pour les liens déjà partagés.
 
-`build/label.css` porte le socle de la charte (tokens, nav, sections, pied de page). Il est
-partagé par `/brand` et `/artistes/a-res` ; chaque page y ajoute son CSS propre.
+### Les pages non routées
+
+`npm run internal` les génère dans `dist/internal/`, **hors du dossier déployé par Vercel**
+(`outputDirectory: dist/site`). Elles restent dans le dépôt pour référence et ne sont
+accessibles par aucune URL.
+
+| Fichier | Contenu |
+|---|---|
+| `brand.html` | Charte : palette, typo, logo, mascotte, gabarits |
+| `logos.html` | Les vingt pistes de mascotte écartées |
+| `presskit-v1.html` | Le presskit d'origine, avec sa direction artistique initiale |
+| `presskit-v1-exemple.html` | Le même, rempli avec le gabarit de démonstration |
+
+La page publique ne pointe vers aucune d'elles : ses liens sortants ont été retirés, sans
+quoi elle renverrait des 404. Et comme `brand.mjs` copiait les assets de marque,
+`artiste.mjs` les copie désormais lui-même — photos, logos, presskit PDF.
 
 ### Ce que la page artiste masque
 
