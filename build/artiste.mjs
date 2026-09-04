@@ -94,7 +94,6 @@ a{color:var(--olive)}
 /* La mascotte contient déjà le nom : le logotype ne l'accompagne jamais.
    Sous 100 px elle devient illisible, d'où la bascule sur le logotype en mobile. */
 .rail__mascotte{width:120px;height:auto;display:block;opacity:.9}
-.rail__logo{display:none}
 .rail__id{margin-bottom:auto}
 .rail__name{font-size:29px;font-weight:700;font-stretch:62%;letter-spacing:.01em;line-height:1}
 .rail__spec{margin-top:16px;font-size:12.5px;color:var(--muted);line-height:1.75}
@@ -125,7 +124,7 @@ h2{font-size:13px;font-weight:600;display:flex;align-items:baseline;gap:14px;mar
   display:block;filter:grayscale(1) contrast(1.06)}
 .top__fig figcaption{font-size:11px;color:var(--muted);padding-top:8px}
 @media (max-width:820px){.top{grid-template-columns:1fr;align-items:start}
-  .top__fig{order:-1;max-width:260px}}
+  .top__fig{max-width:260px}   /* le nom passe avant la photo : on lit qui avant de voir */}
 .top__meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;
   font-size:13px;color:var(--muted)}
 .top__lede{margin-top:30px;max-width:56ch;font-size:clamp(16px,1.9vw,19px);line-height:1.5}
@@ -174,8 +173,7 @@ footer a{color:var(--muted)}
   .shell{grid-template-columns:1fr}
   .rail{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);
     flex-direction:row;align-items:center;gap:18px;padding:18px clamp(24px,4.5vw,68px)}
-  .rail__mascotte{display:none}
-  .rail__logo{display:block;width:150px;height:auto}
+  .rail__mascotte{width:92px}
   .rail__id,.rail__spec,.rail__dl,.rail__soc,.rail .book{display:none}
   main{padding-bottom:104px}
   /* Le bouton reste sous le pouce : c'est la seule action de la page. */
@@ -211,8 +209,7 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 <aside class="rail">
   <img class="rail__mascotte" src="${up}/brand-assets/logo/mascotte-paper.svg"
        alt="Univers Parallele" width="1088" height="982">
-  <img class="rail__logo" src="${up}/brand-assets/logo/logo-1line-paper.svg"
-       alt="Univers Parallele" width="240" height="42">
+
 
   <div class="rail__id">
     <div class="rail__name">${esc(c.artist)}</div>
