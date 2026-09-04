@@ -4,7 +4,7 @@ real_name: "Dorian Moreau"
 city: "Lille, France"
 genres: ["minimal", "micro house"]
 bpm_range: "120–130"
-label: "Universe Parallele"
+label: "Univers Parallele"
 agency: "Indépendant"
 booking_email: "dorian.moreau056@gmail.com"
 press_email: "dorian.moreau056@gmail.com"
@@ -22,7 +22,7 @@ Lille, France · Minimal / Micro house · 120–130 BPM
 
 ## Bio courte
 
-A.RES joue depuis 2019. Entre 120 et 130 BPM : minimal, micro house. Basé à Lille, il est fondateur du collectif Universe Parallele et joue en formats de 1h30 à six heures.
+A.RES joue depuis 2019. Entre 120 et 130 BPM : minimal, micro house. Basé à Lille, il est fondateur du collectif Univers Parallele et joue en formats de 1h30 à six heures.
 
 ## Bio longue
 
@@ -33,7 +33,7 @@ la tension monte par accumulation plutôt que par rupture, et un même motif peu
 plusieurs minutes avant de se déplacer. C'est une écriture qui demande de la durée — d'où
 les formats de 1h30 à six heures.
 
-Fondateur du collectif lillois Universe Parallele. Plusieurs productions micro et
+Fondateur du collectif lillois Univers Parallele. Plusieurs productions micro et
 plusieurs mixes en ligne.
 
 ---
@@ -56,7 +56,7 @@ clés USB. Détail dans la fiche technique.
 | Actif depuis | 2019 |
 | Style | Minimal, micro house |
 | Tempo | 120–130 BPM |
-| Collectif | Universe Parallele, fondateur |
+| Collectif | Univers Parallele, fondateur |
 | Territoire | Europe |
 
 ---

@@ -183,7 +183,7 @@ const html = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(c.artist)} — Booking, presskit</title>
 <meta name="description" content="${esc(real(bioShort) ? bioShort : `${c.artist} — ${(c.meta ?? []).join(", ")}. Écouter, formats de set, fiche technique, booking.`)}">
-<meta property="og:title" content="${esc(c.artist)} — Universe Parallele">
+<meta property="og:title" content="${esc(c.artist)} — Univers Parallele">
 <meta property="og:description" content="${esc((c.meta ?? []).join(" · "))}">
 <meta property="og:type" content="profile">
 ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}">`)}
@@ -198,9 +198,9 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 
 <div class="shell">
 <aside class="rail">
-  <a href="${up}/brand" aria-label="Universe Parallele, la charte">
+  <a href="${up}/brand" aria-label="Univers Parallele, la charte">
     <img class="rail__logo" src="${up}/brand-assets/logo/logo-2lines-paper.svg"
-         alt="Universe Parallele" width="132" height="60"></a>
+         alt="Univers Parallele" width="132" height="60"></a>
 
   <div class="rail__id">
     <div class="rail__name">${esc(c.artist)}</div>
@@ -272,7 +272,7 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
     when(c.contacts, (list) => dl(list.map((x) => [x.role, `${x.name} — ${x.email}`]))))}
 
   <footer>
-    <span>${esc(c.artist)} — Universe Parallele, Lille</span>
+    <span>${esc(c.artist)} — Univers Parallele, Lille</span>
     ${when(c.updated, (u) => `<span>Mis à jour le ${esc(u)}</span>`)}
     <a href="${up}/brand">Charte graphique</a>
   </footer>

@@ -35,7 +35,7 @@ const echelle = [
   ["Sous-titre", "100 %, 600", 21, 100, 600, "Le café-croissant du dimanche"],
   ["Courant", "100 %, 400, interlignage 1.55", 15, 100, 400, "Minimal et micro house, de 11h à 17h, entrée 8 €"],
   ["Mention", "100 %, 500, en papier sourd", 11, 100, 500, "Photo Camille Rousseau, tous droits réservés"],
-  ["Affiche", "62 %, 700, capitales", 30, 62, 700, "UNIVERSE PARALLELE"],
+  ["Affiche", "62 %, 700, capitales", 30, 62, 700, "UNIVERS PARALLELE"],
 ];
 
 const gabarits = [
@@ -54,6 +54,8 @@ const fichiers = [
   ["logo/avatar-mark.svg", "Marque seule, pour les petites tailles"],
   ["logo/avatar-disc-1000.png", "Avatar PNG 1000 px"],
   ["logo/avatar-mark-512.png", "Marque PNG 512 px"],
+  ["logo/mascotte-paper.svg", "Mascotte, papier"],
+  ["logo/mascotte-ink.svg", "Mascotte, encre"],
 ];
 
 /* ---------- rendu ---------- */
@@ -144,9 +146,9 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Universe Parallele — Charte graphique</title>
-<meta name="description" content="Palette, typographie, logo et gabarits du collectif Universe Parallele, Lille.">
-<meta property="og:title" content="Universe Parallele — Charte graphique">
+<title>Univers Parallele — Charte graphique</title>
+<meta name="description" content="Palette, typographie, logo et gabarits du collectif Univers Parallele, Lille.">
+<meta property="og:title" content="Univers Parallele — Charte graphique">
 <meta property="og:description" content="Palette, typographie, logo et gabarits.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="${A}/logo/avatar-disc-1000.png">
@@ -159,11 +161,12 @@ const html = `<!doctype html>
 <body>
 
 <nav class="nav">
-  <span class="nav__name">UNIVERSE PARALLELE</span>
+  <span class="nav__name">UNIVERS PARALLELE</span>
   <div class="nav__links">
     <a href="#palette">Palette</a>
     <a href="#typo">Typographie</a>
     <a href="#logo">Logo</a>
+    <a href="#mascotte">Mascotte</a>
     <a href="#gabarits">Gabarits</a>
     <a href="logos">Pistes</a>
     <a class="nav__home" href="/">Presskit A.RES</a>
@@ -174,7 +177,7 @@ const html = `<!doctype html>
   <img class="disc" src="${A}/logo/avatar-disc.svg" alt="" width="150" height="150">
   <h1>Charte graphique</h1>
   <p>Un disque noir, une étiquette en papier. La charte part d'une matière plutôt que d'un genre musical : le vinyle mat, et le carton non blanchi de l'étiquette centrale. Le fond est sombre parce qu'un disque l'est, et parce qu'un site de label se consulte le soir.</p>
-  <p><em>Universe Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac.</em> Un décalage, pas de l'espace — d'où l'absence de violet, d'étoiles et de dégradés.</p>
+  <p><em>Univers Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac.</em> Un décalage, pas de l'espace — d'où l'absence de violet, d'étoiles et de dégradés.</p>
   <p><a class="cta" href="${A}/charte-graphique.pdf">Charte complète en PDF, 10 planches</a></p>
 </header>
 
@@ -206,9 +209,9 @@ const html = `<!doctype html>
   <h2>Logo</h2>
   <p class="sub">Un logotype, pas un symbole : le nom composé en Archivo à 62 % de largeur, interlettré, en capitales. Vectorisé en tracés — aucune police requise pour l'ouvrir.</p>
   <div class="logos">
-    <figure><img src="${A}/logo/logo-1line-paper.svg" width="430" alt="Universe Parallele">
+    <figure><img src="${A}/logo/logo-1line-paper.svg" width="430" alt="Univers Parallele">
       <figcaption>Une ligne. Usage courant.</figcaption></figure>
-    <figure><img src="${A}/logo/logo-2lines-paper.svg" width="152" alt="Universe Parallele">
+    <figure><img src="${A}/logo/logo-2lines-paper.svg" width="152" alt="Univers Parallele">
       <figcaption>Deux lignes. Formats carrés et verticaux.</figcaption></figure>
     <figure><img class="round" src="${A}/logo/avatar-disc.svg" width="132" alt="">
       <figcaption>Avatar de profil. Lisible jusqu'à 112 px.</figcaption></figure>
@@ -216,6 +219,16 @@ const html = `<!doctype html>
       <figcaption>En dessous de 100 px. Le disque seul reste identifiable à 32 px là où le nom devient une tache.</figcaption></figure>
   </div>
   <p class="sub" style="margin-top:34px">Zone de protection : la hauteur d'un caractère autour du bloc. Ne jamais réétirer la largeur — l'axe variable est déjà réglé à 62 %, le déformer casse le dessin.</p>
+</section>
+
+<section id="mascotte" class="wrap">
+  <h2>Mascotte</h2>
+  <p class="sub">Un globe à lunettes, doigt levé, ceint d'un anneau qui porte le nom. Elle ne remplace pas le logotype : elle porte ce qu'il ne peut pas dire.</p>
+  <div class="grid">
+    <figure><img src="${A}/logo/mascotte-paper.svg" alt="Univers Parallele" style="max-width:340px" loading="lazy">
+      <figcaption>Le logotype signe les documents, les affiches, le presskit. La mascotte porte les réseaux, les stickers, le merch, les visuels de soirée.</figcaption></figure>
+  </div>
+  <p class="sub" style="margin-top:26px">Elle contient déjà le nom : ne jamais la poser à côté du logotype. En dessous de 100 px elle devient illisible — on bascule alors sur la marque. Jamais en blanc pur : les fichiers sont en papier et en encre.</p>
 </section>
 
 <section id="gabarits" class="wrap">
@@ -258,7 +271,7 @@ const html = `<!doctype html>
 </section>
 
 <footer class="wrap">
-  <span>Universe Parallele — Lille</span>
+  <span>Univers Parallele — Lille</span>
   <span>Charte v1, septembre 2026</span>
   <a href="/">Presskit A.RES</a>
 </footer>

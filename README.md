@@ -119,7 +119,7 @@ node build/render.mjs examples/EXEMPLE-REMPLI.md dist/exemple.html
 |---|---|---|
 | `/` | `build/site.mjs` + `site/content.json` | Presskit A.RES, direction artistique d'origine |
 | `/exemple` | `build/site.mjs` + `site/content.example.json` | Le gabarit rempli, pour référence |
-| `/brand` | `build/brand.mjs` | Charte graphique Universe Parallele : palette, typo, logo, gabarits |
+| `/brand` | `build/brand.mjs` | Charte graphique Univers Parallele : palette, typo, logo, gabarits |
 | `/artistes/a-res` | `build/artiste.mjs` + `site/content.json` | La même fiche artiste, à la charte du label |
 
 `/` et `/artistes/a-res` lisent le **même** `content.json` : deux directions artistiques sur
@@ -144,5 +144,5 @@ tant que le bandeau est visible.**
 `site/brand-assets/` contient une copie des logos, gabarits et de la charte PDF issus de
 `../../brand/`. La copie rend le dépôt autonome, mais c'est une **dette assumée** : ce dépôt
 est un gabarit réutilisable pour d'autres artistes, et il embarque aujourd'hui la marque d'un
-label précis. À déplacer vers le site Universe Parallele une fois celui-ci en ligne — deadline
+label précis. À déplacer vers le site Univers Parallele une fois celui-ci en ligne — deadline
 du 2 octobre au plan marketing.
