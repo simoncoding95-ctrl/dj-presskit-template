@@ -93,7 +93,9 @@ a{color:var(--olive)}
   border-right:1px solid var(--line);display:flex;flex-direction:column;gap:26px}
 /* La mascotte contient déjà le nom : le logotype ne l'accompagne jamais.
    Sous 100 px elle devient illisible, d'où la bascule sur le logotype en mobile. */
-.rail__mascotte{width:120px;height:auto;display:block;opacity:.9}
+.rail__home{display:block;width:max-content}
+.rail__mascotte{width:120px;height:auto;display:block;opacity:.9;transition:opacity .15s}
+.rail__home:hover .rail__mascotte{opacity:1}
 .rail__id{margin-bottom:auto}
 .rail__name{font-size:29px;font-weight:700;font-stretch:62%;letter-spacing:.01em;line-height:1}
 .rail__spec{margin-top:16px;font-size:12.5px;color:var(--muted);line-height:1.75}
@@ -207,8 +209,10 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 
 <div class="shell">
 <aside class="rail">
-  <img class="rail__mascotte" src="${up}/brand-assets/logo/mascotte-paper.svg"
-       alt="Univers Parallele" width="1088" height="982">
+  <a class="rail__home" href="${up}/">
+    <img class="rail__mascotte" src="${up}/brand-assets/logo/mascotte-paper.svg"
+         alt="Univers Parallele — accueil" width="1088" height="982">
+  </a>
 
 
   <div class="rail__id">

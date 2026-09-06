@@ -4,7 +4,7 @@
   "private": true,
   "description": "Presskit DJ : site statique piloté par un fichier JSON, plus une version document en PDF.",
   "scripts": {
-    "build": "node build/pdf.mjs site/content.json dist/presskit.html && node build/artiste.mjs site/content.json dist/site/index.html",
+    "build": "node build/pdf.mjs site/content.json dist/presskit.html && node build/label.mjs site/label.json dist/site/index.html && node build/artiste.mjs site/content.json dist/site/artistes/a-res.html",
     "dev": "npm run build && node build/serve.mjs",
     "legacy": "node build/site.mjs site/content.json dist/legacy/index.html && node build/site.mjs site/content.example.json dist/legacy/exemple.html",
     "internal": "node build/brand.mjs dist/internal/brand.html && node build/site.mjs site/content.json dist/internal/presskit-v1.html && node build/site.mjs site/content.example.json dist/internal/presskit-v1-exemple.html"

@@ -1,0 +1,56 @@
+{
+  "name": "Univers Parallele",
+  "baseline": "Le minimal, mais pas seulement la nuit.",
+  "meta": ["Lille", "Collectif & label", "Minimal / micro house"],
+  "lede": "Un collectif lillois qui fait exister la micro-house en journée autant qu'en club — et qui montre comment elle se fabrique.",
+  "about": [
+    "Univers Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac. Un décalage, pas de l'espace.",
+    "On programme des soirées et des day events à Lille, on sort des mixes, et on accompagne les artistes du collectif sur le booking et la production. Le format compte autant que la musique : un café-croissant à onze heures ne se joue pas comme un after."
+  ],
+  "facts": [
+    ["Base", "Lille, France"],
+    ["Depuis", "2026"],
+    ["Style", "Minimal, micro house — 120–130 BPM"],
+    ["Formats", "Club, day event, café-croissant"]
+  ],
+  "artists": [
+    {
+      "name": "A.RES",
+      "role": "Fondateur",
+      "meta": "Minimal / micro house · Lille",
+      "note": "Des boucles longues, une tension qui monte par accumulation. Formats de 1h30 à six heures.",
+      "photo": "assets/photos/portrait-01.png",
+      "url": "artistes/a-res",
+      "presskit": "presskit.pdf"
+    }
+  ],
+  "artists_open": {
+    "title": "Le collectif s'ouvre",
+    "note": "On cherche des artistes minimal et micro house sur Lille et alentour. Envoyez un mix, pas un CV.",
+    "cta": "Proposer un set"
+  },
+  "events": [],
+  "events_placeholder": {
+    "label": "TO BE ANNOUNCED",
+    "note": "La première soirée se prépare. Lieu et line-up d'abord, annonce ensuite \u2014 pas l'inverse.",
+    "cta": "Être prévenu sur Instagram"
+  },
+  "instagram": [],
+  "instagram_handle": "universparallelestudio",
+  "instagram_url": "https://www.instagram.com/universparallelestudio/",
+  "instagram_note": "Les affiches, les dates, et ce qui se passe entre deux soirées.",
+  "booking": {
+    "email": "booking@universparallele.fr",
+    "note": "Pour programmer un artiste du collectif, proposer un lieu, ou monter une date ensemble.",
+    "asks": [
+      "Booker un artiste — réponse sous 48 h, presskit et fiche technique en ligne.",
+      "Proposer un lieu — bar, friche, boutique, péniche. Le format s'adapte.",
+      "Monter une date à deux — on apporte le public et la communication."
+    ]
+  },
+  "links": [
+    { "label": "Instagram", "url": "https://www.instagram.com/universparallelestudio/" },
+    { "label": "SoundCloud", "url": "" }
+  ],
+  "updated": "6 septembre 2026"
+}

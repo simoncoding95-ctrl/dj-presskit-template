@@ -13,8 +13,8 @@ git clone <ce-repo> mon-presskit && cd mon-presskit
 
 Sortie dans `dist/` :
 
-- `dist/site/index.html` — **le site**, à héberger tel quel (les assets sont copiés à côté)
-- `dist/site/exemple.html` — le même site rempli avec un artiste fictif, pour comparer
+- `dist/site/index.html` — **la page du label** : collectif, artistes, dates, Instagram, booking
+- `dist/site/artistes/a-res.html` — la fiche artiste, servie à `/artistes/a-res`
 - `presskit.pdf` / `technical-rider.pdf` — les versions à envoyer par mail
 - `presskit.html` / `technical-rider.html` — les mêmes en page simple
 
@@ -24,7 +24,8 @@ Si aucun navigateur n'est détecté, le script s'arrête après le HTML : ouvre-
 
 | Fichier | Rôle |
 |---|---|
-| `site/content.json` | **Le contenu du site.** Un seul fichier à remplir. |
+| `site/label.json` | **Le contenu de la page du label.** Collectif, artistes, dates, Instagram, booking. |
+| `site/content.json` | **Le contenu de la fiche artiste.** Un seul fichier à remplir. |
 | `site/content.example.json` | Le même, rempli, comme référence. |
 | `PRESSKIT.md` | La version document du presskit (celle qui devient un PDF). |
 | `TECHNICAL-RIDER.md` | Fiche technique et hospitalité. Envoyée avec le contrat, pas avant. |
@@ -112,13 +113,21 @@ node build/render.mjs examples/EXEMPLE-REMPLI.md dist/exemple.html
 
 ## Routes du site
 
-`npm run build` ne produit qu'**une seule page** : la fiche A.RES, servie à la racine.
+`npm run build` produit deux pages.
 
 | Route | Source |
 |---|---|
-| `/` | `build/artiste.mjs` + `site/content.json` |
+| `/` | `build/label.mjs` + `site/label.json` — la page du collectif |
+| `/artistes/a-res` | `build/artiste.mjs` + `site/content.json` — la fiche artiste |
 
-`/artistes/a-res` redirige en 301 vers `/`, pour les liens déjà partagés.
+`cleanUrls` sert `artistes/a-res.html` sans son extension. `/a-res` redirige en 301 vers
+`/artistes/a-res`, pour les liens courts.
+
+La fiche artiste vivait à la racine jusqu'au 6 septembre 2026. Elle calculait déjà ses
+liens depuis sa profondeur (`up`), donc le déplacement n'a coûté qu'une ligne de
+`package.json` — mais **les liens partagés vers `/` pointent maintenant sur le label**,
+pas sur A.RES. C'est le bon sens de l'échange : un booker qui reçoit le presskit arrive
+sur la fiche, un curieux qui tape le domaine arrive sur le collectif.
 
 ### Les pages non routées
 
@@ -177,3 +186,39 @@ Trois écarts assumés avec la page web, parce qu'un PDF n'est pas un écran :
 
 Les deux feuilles remplissent exactement 297 mm. Ajouter du contenu fait déborder la
 seconde — vérifier après toute modification.
+
+
+---
+
+## La page du label
+
+`site/label.json` pilote `/`. Chaque section disparaît quand elle n'a rien à dire — une
+liste d'artistes vide n'affiche pas un cadre vide, elle n'affiche rien, et la numérotation
+des sections se recale.
+
+**Les dates.** Une entrée passe d'elle-même dans l'archive dépliable quand sa `date` (au
+format `AAAA-MM-JJ`) est dépassée : la page ne ment jamais sur ce qui est à venir. Sans
+`ticket_url`, le bouton devient « Billetterie bientôt » plutôt que de disparaître — un
+visiteur qui voit une date sans lien croit que c'est complet.
+
+`"events": []` n'efface pas la section : elle affiche `events_placeholder`, et le bandeau
+d'ouverture annonce la même chose. Une page de label sans rubrique « dates » se lit comme
+un label à l'arrêt ; un « to be announced » assumé se lit comme un label qui prépare
+quelque chose. **Ne mettez une date ici qu'une fois le lieu signé** — une date annoncée
+puis retirée coûte plus cher que pas de date du tout.
+
+**Instagram.** Les vignettes sont manuelles : on dépose l'image dans
+`site/assets/instagram/` et on ajoute une entrée.
+
+```json
+"instagram": [
+  { "src": "assets/instagram/2026-09-01.jpg",
+    "url": "https://www.instagram.com/p/XXXXXXXX/",
+    "alt": "Affiche du 7 novembre" }
+]
+```
+
+Il n'y a pas d'automatisation possible ici : l'API Instagram exige une session
+authentifiée, et l'embed officiel de Meta impose un script tiers, des cookies et un rendu
+blanc au milieu de l'encre. Tableau vide, la section se réduit au bloc « suivre » — ce qui
+est le bon état tant que le compte a peu de contenu.

@@ -7,8 +7,8 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/artistes/a-res",
-      "destination": "/",
+      "source": "/a-res",
+      "destination": "/artistes/a-res",
       "permanent": true
     }
   ]
