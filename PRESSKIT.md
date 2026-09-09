@@ -22,19 +22,27 @@ Lille, France · Minimal / Micro house · 120–130 BPM
 
 ## Bio courte
 
-A.RES joue depuis 2019. Entre 120 et 130 BPM : minimal, micro house. Basé à Lille, il est fondateur du collectif Univers Parallele et joue en formats de 1h30 à six heures.
+Originaire de Belgique et installé à Lille, A.RES joue depuis 2019 : house, minimal,
+micro house, entre 120 et 130 BPM. Fondateur du collectif Univers Parallele, il joue en
+formats de 1h30 à six heures.
 
 ## Bio longue
 
-A.RES joue depuis 2019, à Lille. Minimal et micro house, entre 120 et 130 BPM.
+Originaire de Belgique, A.RES découvre tôt la culture électronique. À quinze ans il
+fréquente déjà les clubs et les soirées qui vont façonner son oreille : le Decadance,
+le Fuse, le Club Vaag.
+
+La house et le monde de la nuit prennent le dessus. Ricardo Villalobos, Fedeo,
+Maya Jane Coles, Jane Fitz : de ces écoutes il tire un terrain à lui, entre house,
+minimal et micro house, autour de 120 à 130 BPM.
 
 Le set se construit sur des boucles longues : les éléments entrent et sortent un par un,
 la tension monte par accumulation plutôt que par rupture, et un même motif peut tenir
 plusieurs minutes avant de se déplacer. C'est une écriture qui demande de la durée — d'où
 les formats de 1h30 à six heures.
 
-Fondateur du collectif lillois Univers Parallele. Plusieurs productions micro et
-plusieurs mixes en ligne.
+Installé à Lille, fondateur du collectif Univers Parallele. Plusieurs productions micro
+et plusieurs mixes en ligne.
 
 ---
 
@@ -53,8 +61,9 @@ clés USB. Détail dans la fiche technique.
 | | |
 |---|---|
 | Base | Lille, France |
+| Origine | Belgique |
 | Actif depuis | 2019 |
-| Style | Minimal, micro house |
+| Style | House, minimal, micro house |
 | Tempo | 120–130 BPM |
 | Collectif | Univers Parallele, fondateur |
 | Territoire | Europe |
