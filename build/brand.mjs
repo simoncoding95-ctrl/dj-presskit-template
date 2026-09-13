@@ -51,7 +51,7 @@ const fichiers = [
   ["logo/logo-papier-fixe.svg", "Logo fixe (PDF, impression)"],
   ["logo/symbole-papier.svg", "Symbole seul (fente vide), animé"],
   ["logo/horizontal-papier.svg", "Horizontal : symbole + nom à côté, animé"],
-  ["logo/nom-papier.svg", "Nom seul, Schibsted Grotesk Bold"],
+  ["logo/nom-papier.svg", "Nom seul, Schibsted Grotesk"],
   ["logo/logo-papier-2000.png", "Logo PNG 2000 px sans fond"],
   ["logo/favicon-512.png", "Icône 512 px"],
 ];
@@ -171,7 +171,7 @@ const html = `<!doctype html>
 </nav>
 
 <header class="hero wrap">
-  <img class="mark" src="${A}/logo/logo-papier.svg" alt="Univers Parallele" width="784" height="556">
+  <img class="mark" src="${A}/logo/logo-papier.svg" alt="Univers Parallele" width="784" height="544">
   <h1>Charte graphique</h1>
   <p>Un disque noir, une étiquette en papier. La charte part d'une matière plutôt que d'un genre musical : le vinyle mat, et le carton non blanchi de l'étiquette centrale. Le fond est sombre parce qu'un disque l'est, et parce qu'un site de label se consulte le soir.</p>
   <p><em>Univers Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac.</em> Un décalage, pas de l'espace — d'où l'absence de violet, d'étoiles et de dégradés.</p>
@@ -204,7 +204,7 @@ const html = `<!doctype html>
 
 <section id="logo" class="wrap">
   <h2>Logo</h2>
-  <p class="sub">Un vinyle ceint d'un anneau de Saturne, cassé en son milieu par une fente bordée de deux barres parallèles. Dans la fente, le nom en Schibsted Grotesk Bold : l'univers parallèle, c'est le nom. Sur écran, les deux moitiés du disque s'écartent, l'anneau oscille et l'étiquette éclate ; pour l'impression, la version fixe.</p>
+  <p class="sub">Un vinyle ceint d'un anneau de Saturne, qui éclate : les sillons tiennent à gauche et se brisent en éclats cristallins ailleurs, autour d'une étiquette pleine. Une fente le traverse ; le nom y est écrit. Sur écran, les moitiés s'écartent, l'anneau oscille et des ondes partent de l'étiquette ; pour l'impression, la version fixe.</p>
   <div class="logos">
     <figure><img src="${A}/logo/logo-papier.svg" width="280" alt="Univers Parallele">
       <figcaption>Logo : le nom dans la fente.</figcaption></figure>
@@ -213,7 +213,7 @@ const html = `<!doctype html>
     <figure><img src="${A}/logo/horizontal-papier.svg" width="320" alt="">
       <figcaption>Horizontal : le nom à côté. Navigation, bandeaux.</figcaption></figure>
   </div>
-  <p class="sub" style="margin-top:34px">Trois traits selon la taille : fin au-dessus de 300 px, moyen de 80 à 300 px, épais pour le favicon. Barres plus fines que les sillons. Ne jamais remplir le disque, redresser l'anneau ni sortir le nom de la fente dans le logo principal.</p>
+  <p class="sub" style="margin-top:34px">Trois traits selon la taille : fin au-dessus de 300 px, moyen de 80 à 300 px, épais pour le favicon (sans éclats). Ne jamais redresser l'anneau, recoller les éclats ni sortir le nom de la fente dans le logo principal.</p>
 </section>
 
 <section id="gabarits" class="wrap">

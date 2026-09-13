@@ -210,7 +210,7 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 <aside class="rail">
   <a class="rail__home" href="${up}/">
     <img class="rail__logo" src="${up}/brand-assets/logo/logo-papier.svg"
-         alt="Univers Parallele — accueil" width="784" height="556">
+         alt="Univers Parallele — accueil" width="784" height="544">
   </a>
 
 
