@@ -31,11 +31,11 @@ const palette = {
 };
 
 const echelle = [
-  ["Titre", "125 % de largeur, 700, interlettrage −0.03 em", 34, 125, 700, "Dimanche 6 décembre"],
-  ["Sous-titre", "100 %, 600", 21, 100, 600, "Le café-croissant du dimanche"],
-  ["Courant", "100 %, 400, interlignage 1.55", 15, 100, 400, "Minimal et micro house, de 11h à 17h, entrée 8 €"],
-  ["Mention", "100 %, 500, en papier sourd", 11, 100, 500, "Photo Camille Rousseau, tous droits réservés"],
-  ["Affiche", "62 %, 700, capitales", 30, 62, 700, "UNIVERS PARALLELE"],
+  ["Titre", "700, interlettrage −0,035 em", 34, -0.035, 700, "Dimanche 6 décembre"],
+  ["Sous-titre", "600", 21, -0.01, 600, "Day event"],
+  ["Courant", "400, interlignage 1,55", 15, 0, 400, "Minimal et micro house, de 11h à 17h, entrée 8 €"],
+  ["Mention", "500, en papier sourd", 11, 0, 500, "Photo Camille Rousseau, tous droits réservés"],
+  ["Affiche", "800, interlettrage −0,045 em", 30, -0.045, 800, "DIM. 06.12"],
 ];
 
 const gabarits = [
@@ -72,7 +72,7 @@ const swatch = (list) =>
 
 const css = readFileSync(join(root, "build/label.css"), "utf8") + `
 .hero{padding:var(--rhythm) 0 calc(var(--rhythm) * .7)}
-.hero h1{font-size:clamp(38px,7vw,76px);font-weight:700;font-stretch:118%;
+.hero h1{font-size:clamp(38px,7vw,76px);font-weight:800;letter-spacing:-.04em;
   letter-spacing:-.028em;line-height:1}
 .hero p{margin-top:22px;max-width:58ch;color:var(--muted);font-size:clamp(15px,1.6vw,18px)}
 .hero .mark{width:clamp(180px,26vw,320px);height:auto;display:block;margin-bottom:34px}
@@ -154,7 +154,7 @@ const html = `<!doctype html>
 <link rel="icon" type="image/svg+xml" href="${A}/logo/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..800&display=swap" rel="stylesheet">
 <style>${css}</style>
 </head>
 <body>
@@ -173,7 +173,7 @@ const html = `<!doctype html>
 </nav>
 
 <header class="hero wrap">
-  <img class="mark" src="${A}/logo/nom-papier.svg" alt="Univers Parallele" width="4795" height="1458">
+  <img class="mark" src="${A}/logo/nom-papier.svg" alt="Univers Parallele" width="5557" height="1519">
   <h1>Charte graphique</h1>
   <p>Un disque noir, une étiquette en papier. La charte part d'une matière plutôt que d'un genre musical : le vinyle mat, et le carton non blanchi de l'étiquette centrale. Le fond est sombre parce qu'un disque l'est, et parce qu'un site de label se consulte le soir.</p>
   <p><em>Univers Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac.</em> Un décalage, pas de l'espace — d'où l'absence de violet, d'étoiles et de dégradés.</p>
@@ -194,19 +194,19 @@ const html = `<!doctype html>
 
 <section id="typo" class="wrap">
   <h2>Typographie</h2>
-  <p class="sub">Archivo, une seule famille sur toute la marque. Le contraste vient de l'échelle et de la largeur — variable de 62 % à 125 % — jamais du mélange de deux familles. Le nom étant générique, ce système typographique est le principal signe distinctif : ajouter une police le dilue.</p>
+  <p class="sub">Geist, une seule famille sur toute la marque. Le contraste vient de l'échelle et de la graisse — variable de 100 à 900 — jamais du mélange de deux familles. Le nom étant générique, ce système typographique est le principal signe distinctif : ajouter une police le dilue.</p>
   <div class="scale">
-    ${echelle.map(([k, d, size, wdth, wght, sample]) => `
+    ${echelle.map(([k, d, size, track, wght, sample]) => `
     <div class="scale__row">
       <div class="scale__k"><b>${k}</b><br>${d}</div>
-      <div class="scale__s" style="font-size:${size}px;font-stretch:${wdth}%;font-weight:${wght};letter-spacing:${wdth > 110 ? "-.03em" : "0"}">${sample}</div>
+      <div class="scale__s" style="font-size:${size}px;font-weight:${wght};letter-spacing:${track}em">${sample}</div>
     </div>`).join("")}
   </div>
 </section>
 
 <section id="logo" class="wrap">
   <h2>Logo</h2>
-  <p class="sub">Deux signes, pas un de plus. Le nom signe tout ; UP le remplace là où il ne se lit plus. Archivo largeur 75 %, graisse 900, interlettrage −0,03 em, deux lignes centrées. Vectorisé en tracés — aucune police requise pour l'ouvrir.</p>
+  <p class="sub">Deux signes, pas un de plus. Le nom signe tout ; UP le remplace là où il ne se lit plus. Geist graisse 800, interlettrage −0,045 em, deux lignes centrées. Vectorisé en tracés — aucune police requise pour l'ouvrir.</p>
   <div class="logos">
     <figure><img src="${A}/logo/nom-papier.svg" width="320" alt="Univers Parallele">
       <figcaption>Le nom. Site, documents, affiches, merch. Minimum 96 px de large.</figcaption></figure>

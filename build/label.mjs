@@ -55,7 +55,7 @@ const css = `
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 body{background:var(--bg);color:var(--ink);line-height:1.55;font-size:15px;
-  font-family:"Archivo","Helvetica Neue",Arial,sans-serif;font-variant-numeric:tabular-nums;
+  font-family:"Geist","Helvetica Neue",Arial,sans-serif;font-variant-numeric:tabular-nums;
   -webkit-font-smoothing:antialiased}
 a{color:var(--olive)}
 :focus-visible{outline:2px solid var(--amber);outline-offset:3px}
@@ -76,7 +76,7 @@ a{color:var(--olive)}
 /* padding-block, pas le raccourci : il remettait à zéro la gouttière de .wrap. */
 .hero{padding-block:clamp(44px,7vw,86px) clamp(36px,5vw,58px);display:grid;
   grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:clamp(28px,5vw,64px);align-items:center}
-/* Le titre est le logotype lui-même : un <h1> texte en Archivo 62 % aurait contredit la marque. */
+/* Le titre est le logotype lui-même : un <h1> texte aurait contredit la marque. */
 .hero h1{line-height:0;margin:0}
 .hero__wordmark{width:100%;max-width:440px;height:auto;display:block;margin-left:auto}
 .hero__lede{margin-top:0;max-width:52ch;font-size:clamp(16px,1.9vw,20px);line-height:1.45}
@@ -94,17 +94,17 @@ a{color:var(--olive)}
   padding:16px 20px;margin-top:30px}
 .nextdate__k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);
   font-weight:600}
-.nextdate__d{font-weight:700;font-stretch:76%;font-size:19px}
+.nextdate__d{font-weight:700;font-size:17px;letter-spacing:-.02em}
 .nextdate__t{color:var(--muted);font-size:13.5px;margin-right:auto}
 .nextdate__t b{color:var(--ink);font-weight:500}
 /* Sans date au calendrier, le même bandeau annonce l'absence plutôt que de disparaître :
    une page de label sans rubrique « dates » se lit comme un label à l'arrêt. */
-.nextdate--tba .nextdate__d{font-stretch:62%;font-size:23px;letter-spacing:.02em}
+.nextdate--tba .nextdate__d{font-weight:800;font-size:18px;letter-spacing:-.02em}
 
 .tba{border:1px dashed var(--line);padding:clamp(30px,5vw,52px) clamp(24px,4vw,42px);
   display:flex;flex-wrap:wrap;align-items:center;gap:20px 40px}
-.tba__l{font-size:clamp(30px,5.4vw,58px);font-weight:700;font-stretch:62%;line-height:.92;
-  letter-spacing:-.005em;color:var(--amber)}
+.tba__l{font-size:clamp(24px,4vw,44px);font-weight:800;line-height:.95;
+  letter-spacing:-.04em;color:var(--amber)}
 .tba__n{color:var(--muted);font-size:14.5px;max-width:44ch;margin-right:auto;line-height:1.5}
 
 section{border-top:1px solid var(--line)}
@@ -136,7 +136,7 @@ a.card:hover{background:var(--surface)}
   display:block;filter:grayscale(1) contrast(1.06);transition:filter .2s}
 a.card:hover .card__img{filter:grayscale(.4) contrast(1.06)}
 .card__body{padding:18px 18px 20px;display:flex;flex-direction:column;gap:7px;flex:1}
-.card__name{font-size:25px;font-weight:700;font-stretch:62%;line-height:1}
+.card__name{font-size:20px;font-weight:800;letter-spacing:-.03em;line-height:1}
 .card__role{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--amber);
   font-weight:600}
 .card__meta{font-size:12.5px;color:var(--muted)}
@@ -152,8 +152,8 @@ a.card:hover .card__img{filter:grayscale(.4) contrast(1.06)}
 .ev{display:grid;grid-template-columns:118px minmax(0,1fr) auto;gap:20px 26px;
   padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .ev:first-child{border-top:1px solid var(--line)}
-.ev__date{font-weight:700;font-stretch:62%;font-size:31px;line-height:.92}
-.ev__date span{display:block;font-size:12px;font-stretch:100%;font-weight:500;
+.ev__date{font-weight:800;font-size:24px;letter-spacing:-.04em;line-height:.95}
+.ev__date span{display:block;font-size:12px;letter-spacing:0;font-weight:500;
   letter-spacing:.1em;color:var(--muted);margin-bottom:5px}
 .ev__title{font-size:19px;font-weight:600}
 .ev__meta{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.6}
@@ -184,7 +184,7 @@ a.card:hover .card__img{filter:grayscale(.4) contrast(1.06)}
 .igrid a:hover img{opacity:.78}
 .follow{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;
   background:var(--surface);padding:24px 26px;margin-top:18px}
-.follow__h{font-weight:700;font-stretch:76%;font-size:20px}
+.follow__h{font-weight:700;font-size:18px;letter-spacing:-.02em}
 .follow__n{color:var(--muted);font-size:13.5px;max-width:46ch;margin-right:auto}
 .btn{display:inline-block;padding:12px 20px;border:1px solid var(--olive);color:var(--olive);
   font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap;transition:.15s}
@@ -289,13 +289,13 @@ const html = `<!doctype html>
 <link rel="apple-touch-icon" href="${up}/brand-assets/logo/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..800&display=swap" rel="stylesheet">
 <style>${css}</style>
 </head>
 <body>
 
 <nav class="nav">
-  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/nom-papier.svg" alt="" width="4795" height="1458"></a>
+  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/nom-papier.svg" alt="" width="5557" height="1519"></a>
   <div class="nav__links">
     ${navLinks.map(([href, label]) => `<a href="${href}">${esc(label)}</a>`).join("")}
   </div>
@@ -317,7 +317,7 @@ const html = `<!doctype html>
       <span class="nextdate__d">${esc(tba.label)}</span>
     </a>` : ""}
   </div>
-  <h1 class="hero__fig"><img class="hero__wordmark" src="${up}/brand-assets/logo/nom-papier.svg" alt="${esc(c.name)}" width="4795" height="1458"></h1>
+  <h1 class="hero__fig"><img class="hero__wordmark" src="${up}/brand-assets/logo/nom-papier.svg" alt="${esc(c.name)}" width="5557" height="1519"></h1>
 </header>
 
 <main>

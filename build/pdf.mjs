@@ -49,13 +49,13 @@ const css = `
   --olive:#4A5D45;--amber:#7A5A1E;--line:rgba(26,25,23,.16);--m:17mm}
 *{margin:0;padding:0;box-sizing:border-box}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-body{font-family:'Archivo',system-ui,sans-serif;font-variant-numeric:tabular-nums;
+body{font-family:'Geist',system-ui,sans-serif;font-variant-numeric:tabular-nums;
   background:var(--paper);color:var(--ink);line-height:1.5}
 .sheet{width:210mm;height:297mm;padding:var(--m);position:relative;overflow:hidden;
   background:var(--paper);display:flex;flex-direction:column;page-break-after:always}
 .sheet:last-child{page-break-after:auto}
 
-h1{font-size:82pt;font-weight:700;font-stretch:62%;line-height:.82;letter-spacing:-.006em}
+h1{font-size:60pt;font-weight:800;line-height:.86;letter-spacing:-.045em}
 h2{font-size:9.5pt;font-weight:600;padding-bottom:1.6mm;margin-bottom:2.8mm;
   border-bottom:.5pt solid var(--line)}
 p{font-size:9pt;line-height:1.55;max-width:78mm}
@@ -114,7 +114,7 @@ const html = `<!doctype html>
 <title>${esc(c.artist)} — Presskit</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..800&display=swap" rel="stylesheet">
 <style>${css}</style>
 </head>
 <body>

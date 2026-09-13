@@ -83,7 +83,7 @@ const css = `
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 body{background:var(--bg);color:var(--ink);line-height:1.55;font-size:15px;
-  font-family:"Archivo","Helvetica Neue",Arial,sans-serif;font-variant-numeric:tabular-nums;
+  font-family:"Geist","Helvetica Neue",Arial,sans-serif;font-variant-numeric:tabular-nums;
   -webkit-font-smoothing:antialiased}
 a{color:var(--olive)}
 :focus-visible{outline:2px solid var(--amber);outline-offset:3px}
@@ -96,7 +96,7 @@ a{color:var(--olive)}
 .rail__logo{width:150px;height:auto;display:block;opacity:.9;transition:opacity .15s}
 .rail__home:hover .rail__logo{opacity:1}
 .rail__id{margin-bottom:auto}
-.rail__name{font-size:29px;font-weight:700;font-stretch:62%;letter-spacing:.01em;line-height:1}
+.rail__name{font-size:23px;font-weight:800;letter-spacing:-.03em;line-height:1}
 .rail__spec{margin-top:16px;font-size:12.5px;color:var(--muted);line-height:1.75}
 .rail__spec b{color:var(--ink);font-weight:500}
 .book{display:block;text-align:center;padding:15px 18px;background:var(--olive);color:var(--bg);
@@ -116,8 +116,8 @@ h2{font-size:13px;font-weight:600;display:flex;align-items:baseline;gap:14px;mar
 
 .top{padding:clamp(48px,7vh,80px) 0 4px;display:grid;
   grid-template-columns:minmax(0,1fr) minmax(0,300px);gap:clamp(24px,4vw,52px);align-items:end}
-.top h1{font-size:clamp(58px,9.5vw,142px);font-weight:700;font-stretch:62%;
-  line-height:.86;letter-spacing:-.005em}
+.top h1{font-size:clamp(44px,7vw,104px);font-weight:800;
+  line-height:.9;letter-spacing:-.045em}
 .top__fig{margin:0;min-width:0}
 /* height:auto est indispensable : sans lui l'attribut height="" de la balise
    fixe la hauteur en pixels et aspect-ratio est ignoré. */
@@ -133,7 +133,7 @@ h2{font-size:13px;font-weight:600;display:flex;align-items:baseline;gap:14px;mar
 /* L'étiquette papier : le lecteur, encadré, devient un objet de la marque. */
 .cart{background:var(--paper);color:#1A1917;padding:16px 16px 12px;margin-bottom:14px}
 .cart__head{display:flex;align-items:baseline;gap:12px;padding-bottom:12px;font-size:13px}
-.cart__n{font-weight:700;font-stretch:62%;font-size:15px}
+.cart__n{font-weight:800;font-size:13px;letter-spacing:-.02em}
 .cart__t{font-weight:600;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .cart__m{color:#6B665E;font-size:12px;white-space:nowrap}
 .cart iframe{width:100%;height:166px;display:block;border:0}
@@ -201,7 +201,7 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://w.soundcloud.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..800&display=swap" rel="stylesheet">
 <style>${css}</style>
 </head>
 <body>
@@ -210,7 +210,7 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 <aside class="rail">
   <a class="rail__home" href="${up}/">
     <img class="rail__logo" src="${up}/brand-assets/logo/nom-papier.svg"
-         alt="Univers Parallele — accueil" width="4795" height="1458">
+         alt="Univers Parallele — accueil" width="5557" height="1519">
   </a>
 
 
