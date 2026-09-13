@@ -51,7 +51,7 @@ const fichiers = [
   ["logo/logo-papier-fixe.svg", "Logo fixe (PDF, impression)"],
   ["logo/symbole-papier.svg", "Symbole seul (fente vide), animé"],
   ["logo/horizontal-papier.svg", "Horizontal : symbole + nom à côté, animé"],
-  ["logo/nom-papier.svg", "Nom seul, Geist 700"],
+  ["logo/nom-papier.svg", "Nom seul, Schibsted Grotesk Bold"],
   ["logo/logo-papier-2000.png", "Logo PNG 2000 px sans fond"],
   ["logo/favicon-512.png", "Icône 512 px"],
 ];
@@ -153,7 +153,7 @@ const html = `<!doctype html>
 <link rel="icon" type="image/svg+xml" href="${A}/logo/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..800&display=swap" rel="stylesheet">
 <style>${css}</style>
 </head>
 <body>
@@ -192,7 +192,7 @@ const html = `<!doctype html>
 
 <section id="typo" class="wrap">
   <h2>Typographie</h2>
-  <p class="sub">Geist, une seule famille sur toute la marque. Le contraste vient de l'échelle et de la graisse — variable de 100 à 900 — jamais du mélange de deux familles. Le nom étant générique, ce système typographique est le principal signe distinctif : ajouter une police le dilue.</p>
+  <p class="sub">Schibsted Grotesk, une seule famille sur toute la marque. Le contraste vient de l'échelle et de la graisse — variable de 400 à 900 — jamais du mélange de deux familles. Le nom étant générique, ce système typographique est le principal signe distinctif : ajouter une police le dilue.</p>
   <div class="scale">
     ${echelle.map(([k, d, size, track, wght, sample]) => `
     <div class="scale__row">
@@ -204,7 +204,7 @@ const html = `<!doctype html>
 
 <section id="logo" class="wrap">
   <h2>Logo</h2>
-  <p class="sub">Un vinyle ceint d'un anneau de Saturne, cassé en son milieu par une fente bordée de deux barres parallèles. Dans la fente, le nom en Geist 700 : l'univers parallèle, c'est le nom. Sur écran, les deux moitiés du disque s'écartent, l'anneau oscille et l'étiquette éclate ; pour l'impression, la version fixe.</p>
+  <p class="sub">Un vinyle ceint d'un anneau de Saturne, cassé en son milieu par une fente bordée de deux barres parallèles. Dans la fente, le nom en Schibsted Grotesk Bold : l'univers parallèle, c'est le nom. Sur écran, les deux moitiés du disque s'écartent, l'anneau oscille et l'étiquette éclate ; pour l'impression, la version fixe.</p>
   <div class="logos">
     <figure><img src="${A}/logo/logo-papier.svg" width="280" alt="Univers Parallele">
       <figcaption>Logo : le nom dans la fente.</figcaption></figure>

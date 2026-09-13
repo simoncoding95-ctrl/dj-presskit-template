@@ -55,7 +55,7 @@ const css = `
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 body{background:var(--bg);color:var(--ink);line-height:1.55;font-size:15px;
-  font-family:"Geist","Helvetica Neue",Arial,sans-serif;font-variant-numeric:tabular-nums;
+  font-family:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
   -webkit-font-smoothing:antialiased}
 a{color:var(--olive)}
 :focus-visible{outline:2px solid var(--amber);outline-offset:3px}
@@ -290,13 +290,13 @@ const html = `<!doctype html>
 <link rel="apple-touch-icon" href="${up}/brand-assets/logo/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..800&display=swap" rel="stylesheet">
 <style>${css}</style>
 </head>
 <body>
 
 <nav class="nav">
-  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/horizontal-papier.svg" alt="" width="2428" height="556"></a>
+  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/horizontal-papier.svg" alt="" width="2445" height="556"></a>
   <div class="nav__links">
     ${navLinks.map(([href, label]) => `<a href="${href}">${esc(label)}</a>`).join("")}
   </div>

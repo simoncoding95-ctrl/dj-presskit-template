@@ -83,7 +83,7 @@ const css = `
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 body{background:var(--bg);color:var(--ink);line-height:1.55;font-size:15px;
-  font-family:"Geist","Helvetica Neue",Arial,sans-serif;font-variant-numeric:tabular-nums;
+  font-family:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
   -webkit-font-smoothing:antialiased}
 a{color:var(--olive)}
 :focus-visible{outline:2px solid var(--amber);outline-offset:3px}
@@ -201,7 +201,7 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://w.soundcloud.com">
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..800&display=swap" rel="stylesheet">
 <style>${css}</style>
 </head>
 <body>

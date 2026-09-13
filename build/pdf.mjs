@@ -49,7 +49,7 @@ const css = `
   --olive:#4A5D45;--amber:#7A5A1E;--line:rgba(26,25,23,.16);--m:17mm}
 *{margin:0;padding:0;box-sizing:border-box}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-body{font-family:'Geist',system-ui,sans-serif;font-variant-numeric:tabular-nums;
+body{font-family:'Schibsted Grotesk',system-ui,sans-serif;
   background:var(--paper);color:var(--ink);line-height:1.5}
 .sheet{width:210mm;height:297mm;padding:var(--m);position:relative;overflow:hidden;
   background:var(--paper);display:flex;flex-direction:column;page-break-after:always}
@@ -114,7 +114,7 @@ const html = `<!doctype html>
 <title>${esc(c.artist)} — Presskit</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..800&display=swap" rel="stylesheet">
 <style>${css}</style>
 </head>
 <body>
