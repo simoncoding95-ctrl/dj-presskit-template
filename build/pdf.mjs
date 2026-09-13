@@ -36,7 +36,7 @@ const booking = (c.contacts ?? []).find((x) => /booking/i.test(x.role)) ?? c.con
 const qr = file("site/qr-soundcloud.svg")
   .replace(/<\?xml[^>]*\?>/, "")
   .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:100%;height:auto;display:block"');
-const logo = file("site/brand-assets/logo/wordmark-ink.svg")
+const logo = file("site/brand-assets/logo/nom-encre.svg")
   .replace(/<\?xml[^>]*\?>/, "")
   .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:42mm;height:auto;display:block"');
 

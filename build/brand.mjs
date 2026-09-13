@@ -46,16 +46,15 @@ const gabarits = [
 ];
 
 const fichiers = [
-  ["logo/logo-1line-paper.svg", "Logotype une ligne, papier"],
-  ["logo/logo-1line-ink.svg", "Logotype une ligne, encre"],
-  ["logo/logo-2lines-paper.svg", "Logotype deux lignes, papier"],
-  ["logo/logo-2lines-ink.svg", "Logotype deux lignes, encre"],
-  ["logo/avatar-disc.svg", "Avatar, avec le nom"],
-  ["logo/avatar-mark.svg", "Marque seule, pour les petites tailles"],
-  ["logo/avatar-disc-1000.png", "Avatar PNG 1000 px"],
-  ["logo/avatar-mark-512.png", "Marque PNG 512 px"],
-  ["logo/mascotte-paper.svg", "Mascotte, papier"],
-  ["logo/mascotte-ink.svg", "Mascotte, encre"],
+  ["logo/nom-papier.svg", "Nom, papier — pour fond sombre"],
+  ["logo/nom-encre.svg", "Nom, encre — pour fond clair"],
+  ["logo/nom-papier-2000.png", "Nom, papier, PNG 2000 px sans fond"],
+  ["logo/nom-encre-2000.png", "Nom, encre, PNG 2000 px sans fond"],
+  ["logo/up-papier.svg", "UP, papier"],
+  ["logo/up-encre.svg", "UP, encre"],
+  ["logo/up-olive.svg", "UP, olive"],
+  ["logo/up-papier-1000.png", "UP, papier, PNG 1000 px sans fond"],
+  ["logo/favicon-512.png", "Icône 512 px"],
 ];
 
 /* ---------- rendu ---------- */
@@ -76,7 +75,7 @@ const css = readFileSync(join(root, "build/label.css"), "utf8") + `
 .hero h1{font-size:clamp(38px,7vw,76px);font-weight:700;font-stretch:118%;
   letter-spacing:-.028em;line-height:1}
 .hero p{margin-top:22px;max-width:58ch;color:var(--muted);font-size:clamp(15px,1.6vw,18px)}
-.hero .disc{width:clamp(96px,13vw,150px);border-radius:50%;display:block;margin-bottom:34px}
+.hero .mark{width:clamp(180px,26vw,320px);height:auto;display:block;margin-bottom:34px}
 
 section{padding:calc(var(--rhythm) * .55) 0;border-top:1px solid var(--line)}
 h2{font-size:13px;font-weight:600;margin-bottom:8px}
@@ -151,8 +150,8 @@ const html = `<!doctype html>
 <meta property="og:title" content="Univers Parallele — Charte graphique">
 <meta property="og:description" content="Palette, typographie, logo et gabarits.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="${A}/logo/avatar-disc-1000.png">
-<link rel="icon" href="${A}/logo/avatar-mark-512.png">
+<meta property="og:image" content="${A}/logo/og-1200.png">
+<link rel="icon" type="image/svg+xml" href="${A}/logo/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&display=swap" rel="stylesheet">
@@ -166,7 +165,7 @@ const html = `<!doctype html>
     <a href="#palette">Palette</a>
     <a href="#typo">Typographie</a>
     <a href="#logo">Logo</a>
-    <a href="#mascotte">Mascotte</a>
+    <a href="#up">UP</a>
     <a href="#gabarits">Gabarits</a>
     <a href="logos">Pistes</a>
     <a class="nav__home" href="/">Presskit A.RES</a>
@@ -174,11 +173,11 @@ const html = `<!doctype html>
 </nav>
 
 <header class="hero wrap">
-  <img class="disc" src="${A}/logo/avatar-disc.svg" alt="" width="150" height="150">
+  <img class="mark" src="${A}/logo/nom-papier.svg" alt="Univers Parallele" width="4795" height="1458">
   <h1>Charte graphique</h1>
   <p>Un disque noir, une étiquette en papier. La charte part d'une matière plutôt que d'un genre musical : le vinyle mat, et le carton non blanchi de l'étiquette centrale. Le fond est sombre parce qu'un disque l'est, et parce qu'un site de label se consulte le soir.</p>
   <p><em>Univers Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac.</em> Un décalage, pas de l'espace — d'où l'absence de violet, d'étoiles et de dégradés.</p>
-  <p><a class="cta" href="${A}/charte-graphique.pdf">Charte complète en PDF, 10 planches</a></p>
+  <p><a class="cta" href="${A}/charte-graphique.pdf">Charte complète en PDF, 12 planches</a></p>
 </header>
 
 <section id="palette" class="wrap">
@@ -207,28 +206,23 @@ const html = `<!doctype html>
 
 <section id="logo" class="wrap">
   <h2>Logo</h2>
-  <p class="sub">Un logotype, pas un symbole : le nom composé en Archivo à 62 % de largeur, interlettré, en capitales. Vectorisé en tracés — aucune police requise pour l'ouvrir.</p>
+  <p class="sub">Deux signes, pas un de plus. Le nom signe tout ; UP le remplace là où il ne se lit plus. Archivo largeur 75 %, graisse 900, interlettrage −0,03 em, deux lignes centrées. Vectorisé en tracés — aucune police requise pour l'ouvrir.</p>
   <div class="logos">
-    <figure><img src="${A}/logo/logo-1line-paper.svg" width="430" alt="Univers Parallele">
-      <figcaption>Une ligne. Usage courant.</figcaption></figure>
-    <figure><img src="${A}/logo/logo-2lines-paper.svg" width="152" alt="Univers Parallele">
-      <figcaption>Deux lignes. Formats carrés et verticaux.</figcaption></figure>
-    <figure><img class="round" src="${A}/logo/avatar-disc.svg" width="132" alt="">
-      <figcaption>Avatar de profil. Lisible jusqu'à 112 px.</figcaption></figure>
-    <figure><img class="round" src="${A}/logo/avatar-mark.svg" width="132" alt="">
-      <figcaption>En dessous de 100 px. Le disque seul reste identifiable à 32 px là où le nom devient une tache.</figcaption></figure>
+    <figure><img src="${A}/logo/nom-papier.svg" width="320" alt="Univers Parallele">
+      <figcaption>Le nom. Site, documents, affiches, merch. Minimum 96 px de large.</figcaption></figure>
   </div>
-  <p class="sub" style="margin-top:34px">Zone de protection : la hauteur d'un caractère autour du bloc. Ne jamais réétirer la largeur — l'axe variable est déjà réglé à 62 %, le déformer casse le dessin.</p>
+  <p class="sub" style="margin-top:34px">Zone de protection : la hauteur d'une capitale autour du bloc. Ne jamais étirer, recolorer hors palette, ni retaper le nom en police.</p>
 </section>
 
-<section id="mascotte" class="wrap">
-  <h2>Mascotte</h2>
-  <p class="sub">Un globe à lunettes, doigt levé, ceint d'un anneau qui porte le nom. Elle ne remplace pas le logotype : elle porte ce qu'il ne peut pas dire.</p>
-  <div class="grid">
-    <figure><img src="${A}/logo/mascotte-paper.svg" alt="Univers Parallele" style="max-width:340px" loading="lazy">
-      <figcaption>Le logotype signe les documents, les affiches, le presskit. La mascotte porte les réseaux, les stickers, le merch, les visuels de soirée.</figcaption></figure>
+<section id="up" class="wrap">
+  <h2>UP</h2>
+  <p class="sub">Le U et le P partagent la même barre. Le signe des petites tailles : photos de profil, favicon, icône, tampon. Jamais à côté du nom.</p>
+  <div class="logos">
+    <figure><img src="${A}/logo/up-papier.svg" width="160" alt="UP">
+      <figcaption>Papier, sur fond sombre.</figcaption></figure>
+    <figure><img src="${A}/logo/favicon.svg" width="132" alt="">
+      <figcaption>Tuile encre. Favicon et icônes.</figcaption></figure>
   </div>
-  <p class="sub" style="margin-top:26px">Elle contient déjà le nom : ne jamais la poser à côté du logotype. En dessous de 100 px elle devient illisible — on bascule alors sur la marque. Jamais en blanc pur : les fichiers sont en papier et en encre.</p>
 </section>
 
 <section id="gabarits" class="wrap">
