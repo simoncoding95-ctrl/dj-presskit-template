@@ -91,7 +91,7 @@ a{color:var(--olive)}
 .shell{display:grid;grid-template-columns:var(--rail) 1fr;min-height:100vh}
 .rail{position:sticky;top:0;align-self:start;height:100vh;padding:38px 32px;
   border-right:1px solid var(--line);display:flex;flex-direction:column;gap:26px}
-/* Le logotype du label signe la colonne ; UP ne sert qu'aux icônes, pas à côté du nom. */
+/* Le logotype du label signe la colonne. */
 .rail__home{display:block;width:max-content}
 .rail__logo{width:150px;height:auto;display:block;opacity:.9;transition:opacity .15s}
 .rail__home:hover .rail__logo{opacity:1}
@@ -210,7 +210,7 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 <aside class="rail">
   <a class="rail__home" href="${up}/">
     <img class="rail__logo" src="${up}/brand-assets/logo/nom-papier.svg"
-         alt="Univers Parallele — accueil" width="5557" height="1519">
+         alt="Univers Parallele — accueil" width="5046" height="1446">
   </a>
 
 
@@ -302,7 +302,7 @@ writeFileSync(outAbs, html, "utf8");
 const notDoc = (f) => !f.toLowerCase().endsWith(".md");
 for (const [from, to] of [
   ["assets", join(SITE_ROOT, "assets")],                            // photos
-  ["site/brand-assets/logo", join(SITE_ROOT, "brand-assets/logo")], // logotype, UP, favicon
+  ["site/brand-assets/logo", join(SITE_ROOT, "brand-assets/logo")], // logotype, favicon
   ["site/downloads", SITE_ROOT],                                    // presskit PDF
 ]) {
   const s = join(root, from);

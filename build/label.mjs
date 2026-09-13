@@ -295,7 +295,7 @@ const html = `<!doctype html>
 <body>
 
 <nav class="nav">
-  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/nom-papier.svg" alt="" width="5557" height="1519"></a>
+  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/nom-papier.svg" alt="" width="5046" height="1446"></a>
   <div class="nav__links">
     ${navLinks.map(([href, label]) => `<a href="${href}">${esc(label)}</a>`).join("")}
   </div>
@@ -317,7 +317,7 @@ const html = `<!doctype html>
       <span class="nextdate__d">${esc(tba.label)}</span>
     </a>` : ""}
   </div>
-  <h1 class="hero__fig"><img class="hero__wordmark" src="${up}/brand-assets/logo/nom-papier.svg" alt="${esc(c.name)}" width="5557" height="1519"></h1>
+  <h1 class="hero__fig"><img class="hero__wordmark" src="${up}/brand-assets/logo/nom-papier.svg" alt="${esc(c.name)}" width="5046" height="1446"></h1>
 </header>
 
 <main>

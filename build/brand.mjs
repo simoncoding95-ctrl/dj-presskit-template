@@ -48,12 +48,10 @@ const gabarits = [
 const fichiers = [
   ["logo/nom-papier.svg", "Nom, papier — pour fond sombre"],
   ["logo/nom-encre.svg", "Nom, encre — pour fond clair"],
+  ["logo/nom-olive.svg", "Nom, olive — accent sur fond sombre"],
+  ["logo/nom-olive-fonce.svg", "Nom, olive foncée — accent sur fond clair"],
   ["logo/nom-papier-2000.png", "Nom, papier, PNG 2000 px sans fond"],
   ["logo/nom-encre-2000.png", "Nom, encre, PNG 2000 px sans fond"],
-  ["logo/up-papier.svg", "UP, papier"],
-  ["logo/up-encre.svg", "UP, encre"],
-  ["logo/up-olive.svg", "UP, olive"],
-  ["logo/up-papier-1000.png", "UP, papier, PNG 1000 px sans fond"],
   ["logo/favicon-512.png", "Icône 512 px"],
 ];
 
@@ -165,7 +163,6 @@ const html = `<!doctype html>
     <a href="#palette">Palette</a>
     <a href="#typo">Typographie</a>
     <a href="#logo">Logo</a>
-    <a href="#up">UP</a>
     <a href="#gabarits">Gabarits</a>
     <a href="logos">Pistes</a>
     <a class="nav__home" href="/">Presskit A.RES</a>
@@ -173,7 +170,7 @@ const html = `<!doctype html>
 </nav>
 
 <header class="hero wrap">
-  <img class="mark" src="${A}/logo/nom-papier.svg" alt="Univers Parallele" width="5557" height="1519">
+  <img class="mark" src="${A}/logo/nom-papier.svg" alt="Univers Parallele" width="5046" height="1446">
   <h1>Charte graphique</h1>
   <p>Un disque noir, une étiquette en papier. La charte part d'une matière plutôt que d'un genre musical : le vinyle mat, et le carton non blanchi de l'étiquette centrale. Le fond est sombre parce qu'un disque l'est, et parce qu'un site de label se consulte le soir.</p>
   <p><em>Univers Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac.</em> Un décalage, pas de l'espace — d'où l'absence de violet, d'étoiles et de dégradés.</p>
@@ -206,23 +203,16 @@ const html = `<!doctype html>
 
 <section id="logo" class="wrap">
   <h2>Logo</h2>
-  <p class="sub">Deux signes, pas un de plus. Le nom signe tout ; UP le remplace là où il ne se lit plus. Geist graisse 800, interlettrage −0,045 em, deux lignes centrées. Vectorisé en tracés — aucune police requise pour l'ouvrir.</p>
+  <p class="sub">Un seul signe : le nom, sur deux lignes centrées, grotesque noire aux lettres presque au contact. C'est un dessin vectorisé — aucune police requise pour l'ouvrir — et il ne se retape jamais en police. Le texte de la marque, lui, est en Geist.</p>
   <div class="logos">
     <figure><img src="${A}/logo/nom-papier.svg" width="320" alt="Univers Parallele">
-      <figcaption>Le nom. Site, documents, affiches, merch. Minimum 96 px de large.</figcaption></figure>
+      <figcaption>Papier, sur fond sombre. Minimum 96 px de large.</figcaption></figure>
+    <figure><img src="${A}/logo/nom-olive.svg" width="220" alt="">
+      <figcaption>Olive : accent, rare.</figcaption></figure>
+    <figure><img src="${A}/logo/favicon.svg" width="110" alt="">
+      <figcaption>Favicon : le nom remplit le carré.</figcaption></figure>
   </div>
-  <p class="sub" style="margin-top:34px">Zone de protection : la hauteur d'une capitale autour du bloc. Ne jamais étirer, recolorer hors palette, ni retaper le nom en police.</p>
-</section>
-
-<section id="up" class="wrap">
-  <h2>UP</h2>
-  <p class="sub">Le U et le P partagent la même barre. Le signe des petites tailles : photos de profil, favicon, icône, tampon. Jamais à côté du nom.</p>
-  <div class="logos">
-    <figure><img src="${A}/logo/up-papier.svg" width="160" alt="UP">
-      <figcaption>Papier, sur fond sombre.</figcaption></figure>
-    <figure><img src="${A}/logo/favicon.svg" width="132" alt="">
-      <figcaption>Tuile encre. Favicon et icônes.</figcaption></figure>
-  </div>
+  <p class="sub" style="margin-top:34px">Zone de protection : la hauteur d'une capitale autour du bloc. Ne jamais étirer, recolorer hors palette, ajouter un second signe, ni retaper le nom.</p>
 </section>
 
 <section id="gabarits" class="wrap">
