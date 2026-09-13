@@ -1,6 +1,6 @@
 // Fiche artiste à la charte du label. Un seul objectif : déclencher une demande de date.
 // Usage : node build/artiste.mjs site/content.json dist/site/artistes/a-res.html
-import { readFileSync, writeFileSync, existsSync, mkdirSync, cpSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync, cpSync, rmSync } from "node:fs";
 import { dirname, resolve, join, relative } from "node:path";
 
 const [, , contentPath = "site/content.json",
@@ -306,7 +306,12 @@ for (const [from, to] of [
   ["site/downloads", SITE_ROOT],                                    // presskit PDF
 ]) {
   const s = join(root, from);
-  if (existsSync(s)) cpSync(s, to, { recursive: true, filter: notDoc });
+  if (!existsSync(s)) continue;
+  // Remplacer, pas fusionner : un fichier retiré des sources doit disparaître de la
+  // sortie, sinon il repart en production (arrivé avec les anciens logos le 13/09).
+  // Jamais la racine du site : les PDF y sont copiés à côté des pages générées.
+  if (to !== SITE_ROOT) rmSync(to, { recursive: true, force: true });
+  cpSync(s, to, { recursive: true, filter: notDoc });
 }
 
 console.log(`✓ ${outputPath}${missing.length ? `  (masqué : ${missing.join(", ")})` : ""}`);

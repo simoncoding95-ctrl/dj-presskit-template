@@ -1,6 +1,6 @@
 // Page d'accueil du label. Un seul objectif : qu'on reparte avec une date ou un contact.
 // Usage : node build/label.mjs site/label.json dist/site/index.html
-import { readFileSync, writeFileSync, existsSync, mkdirSync, cpSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync, cpSync, rmSync } from "node:fs";
 import { dirname, resolve, join, relative } from "node:path";
 
 const [, , contentPath = "site/label.json",
@@ -407,7 +407,12 @@ for (const [from, to] of [
   ["site/brand-assets/logo", join(SITE_ROOT, "brand-assets/logo")],
 ]) {
   const s = join(root, from);
-  if (existsSync(s)) cpSync(s, to, { recursive: true, filter: notDoc });
+  if (!existsSync(s)) continue;
+  // Remplacer, pas fusionner : un fichier retiré des sources doit disparaître de la
+  // sortie, sinon il repart en production (arrivé avec les anciens logos le 13/09).
+  // Jamais la racine du site : les PDF y sont copiés à côté des pages générées.
+  if (to !== SITE_ROOT) rmSync(to, { recursive: true, force: true });
+  cpSync(s, to, { recursive: true, filter: notDoc });
 }
 
 console.log(`✓ ${outputPath}  (${artists.length} artiste(s), ${upcoming.length} date(s) à venir` +
