@@ -65,8 +65,9 @@ a{color:var(--olive)}
 .nav{position:sticky;top:0;z-index:9;display:flex;align-items:center;gap:16px;
   padding:12px var(--gutter);background:rgba(22,21,15,.9);backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);font-size:13px}
-.nav__home{display:block;line-height:0}
-.nav__logo{height:28px;width:auto;display:block}
+.nav__home{display:flex;align-items:center;gap:10px;line-height:0;text-decoration:none}
+.nav__sym{height:34px;width:auto;display:block}
+.nav__nom{height:10px;width:auto;display:block}
 .nav__links{display:flex;gap:20px;margin-left:auto;color:var(--muted)}
 .nav__links a{color:inherit;text-decoration:none;white-space:nowrap}
 .nav__links a:hover{color:var(--ink)}
@@ -78,7 +79,8 @@ a{color:var(--olive)}
   grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:clamp(28px,5vw,64px);align-items:center}
 /* Le titre est le logotype lui-même : un <h1> texte aurait contredit la marque. */
 .hero h1{line-height:0;margin:0}
-.hero__wordmark{width:100%;max-width:440px;height:auto;display:block;margin-left:auto}
+/* Le logo animé : l'anneau oscille, en CSS dans le SVG, coupé sous prefers-reduced-motion. */
+.hero__wordmark{width:100%;max-width:400px;height:auto;display:block;margin-left:auto}
 .hero__lede{margin-top:0;max-width:52ch;font-size:clamp(16px,1.9vw,20px);line-height:1.45}
 .hero__meta{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:22px;font-size:13px;color:var(--muted)}
 @media (max-width:820px){
@@ -295,7 +297,7 @@ const html = `<!doctype html>
 <body>
 
 <nav class="nav">
-  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/nom-papier.svg" alt="" width="5046" height="1446"></a>
+  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__sym" src="${up}/brand-assets/logo/symbole-papier-moyen.svg" alt="" width="784" height="524"><img class="nav__nom" src="${up}/brand-assets/logo/nom-papier.svg" alt="" width="10858" height="710"></a>
   <div class="nav__links">
     ${navLinks.map(([href, label]) => `<a href="${href}">${esc(label)}</a>`).join("")}
   </div>
@@ -317,7 +319,7 @@ const html = `<!doctype html>
       <span class="nextdate__d">${esc(tba.label)}</span>
     </a>` : ""}
   </div>
-  <h1 class="hero__fig"><img class="hero__wordmark" src="${up}/brand-assets/logo/nom-papier.svg" alt="${esc(c.name)}" width="5046" height="1446"></h1>
+  <h1 class="hero__fig"><img class="hero__wordmark" src="${up}/brand-assets/logo/logo-papier.svg" alt="${esc(c.name)}" width="784" height="641"></h1>
 </header>
 
 <main>

@@ -36,9 +36,9 @@ const booking = (c.contacts ?? []).find((x) => /booking/i.test(x.role)) ?? c.con
 const qr = file("site/qr-soundcloud.svg")
   .replace(/<\?xml[^>]*\?>/, "")
   .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:100%;height:auto;display:block"');
-const logo = file("site/brand-assets/logo/nom-encre.svg")
+const logo = file("site/brand-assets/logo/logo-encre-fixe.svg")
   .replace(/<\?xml[^>]*\?>/, "")
-  .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:42mm;height:auto;display:block"');
+  .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:30mm;height:auto;display:block"');
 
 const rows = (list) => `<dl class="spec">${list.map(([k, v]) =>
   `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>`;

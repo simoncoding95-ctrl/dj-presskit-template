@@ -46,12 +46,13 @@ const gabarits = [
 ];
 
 const fichiers = [
-  ["logo/nom-papier.svg", "Nom, papier — pour fond sombre"],
-  ["logo/nom-encre.svg", "Nom, encre — pour fond clair"],
-  ["logo/nom-olive.svg", "Nom, olive — accent sur fond sombre"],
-  ["logo/nom-olive-fonce.svg", "Nom, olive foncée — accent sur fond clair"],
-  ["logo/nom-papier-2000.png", "Nom, papier, PNG 2000 px sans fond"],
-  ["logo/nom-encre-2000.png", "Nom, encre, PNG 2000 px sans fond"],
+  ["logo/logo-papier.svg", "Logo complet animé, papier — fond sombre"],
+  ["logo/logo-encre.svg", "Logo complet animé, encre — fond clair"],
+  ["logo/logo-papier-fixe.svg", "Logo complet fixe (PDF, impression)"],
+  ["logo/symbole-papier.svg", "Symbole seul animé"],
+  ["logo/symbole-papier-moyen.svg", "Symbole trait moyen, 80–300 px"],
+  ["logo/nom-papier.svg", "Nom seul, une ligne"],
+  ["logo/logo-papier-2000.png", "Logo complet PNG 2000 px sans fond"],
   ["logo/favicon-512.png", "Icône 512 px"],
 ];
 
@@ -73,7 +74,7 @@ const css = readFileSync(join(root, "build/label.css"), "utf8") + `
 .hero h1{font-size:clamp(38px,7vw,76px);font-weight:800;letter-spacing:-.04em;
   letter-spacing:-.028em;line-height:1}
 .hero p{margin-top:22px;max-width:58ch;color:var(--muted);font-size:clamp(15px,1.6vw,18px)}
-.hero .mark{width:clamp(180px,26vw,320px);height:auto;display:block;margin-bottom:34px}
+.hero .mark{width:clamp(160px,22vw,260px);height:auto;display:block;margin-bottom:34px}
 
 section{padding:calc(var(--rhythm) * .55) 0;border-top:1px solid var(--line)}
 h2{font-size:13px;font-weight:600;margin-bottom:8px}
@@ -170,7 +171,7 @@ const html = `<!doctype html>
 </nav>
 
 <header class="hero wrap">
-  <img class="mark" src="${A}/logo/nom-papier.svg" alt="Univers Parallele" width="5046" height="1446">
+  <img class="mark" src="${A}/logo/logo-papier.svg" alt="Univers Parallele" width="784" height="641">
   <h1>Charte graphique</h1>
   <p>Un disque noir, une étiquette en papier. La charte part d'une matière plutôt que d'un genre musical : le vinyle mat, et le carton non blanchi de l'étiquette centrale. Le fond est sombre parce qu'un disque l'est, et parce qu'un site de label se consulte le soir.</p>
   <p><em>Univers Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac.</em> Un décalage, pas de l'espace — d'où l'absence de violet, d'étoiles et de dégradés.</p>
@@ -203,16 +204,16 @@ const html = `<!doctype html>
 
 <section id="logo" class="wrap">
   <h2>Logo</h2>
-  <p class="sub">Un seul signe : le nom, sur deux lignes centrées, grotesque noire aux lettres presque au contact. C'est un dessin vectorisé — aucune police requise pour l'ouvrir — et il ne se retape jamais en police. Le texte de la marque, lui, est en Geist.</p>
+  <p class="sub">Un vinyle vu de face, ceint d'un anneau de Saturne : le disque dit la musique, l'anneau dit l'autre univers. Le nom dessous, en Geist. Sur écran, l'anneau oscille lentement ; pour l'impression et les PDF, la version fixe.</p>
   <div class="logos">
-    <figure><img src="${A}/logo/nom-papier.svg" width="320" alt="Univers Parallele">
-      <figcaption>Papier, sur fond sombre. Minimum 96 px de large.</figcaption></figure>
-    <figure><img src="${A}/logo/nom-olive.svg" width="220" alt="">
-      <figcaption>Olive : accent, rare.</figcaption></figure>
-    <figure><img src="${A}/logo/favicon.svg" width="110" alt="">
-      <figcaption>Favicon : le nom remplit le carré.</figcaption></figure>
+    <figure><img src="${A}/logo/logo-papier.svg" width="260" alt="Univers Parallele">
+      <figcaption>Logo complet, animé. Au-dessus de 160 px.</figcaption></figure>
+    <figure><img src="${A}/logo/symbole-papier-moyen.svg" width="150" alt="">
+      <figcaption>Symbole, trait moyen. Navigation, profils.</figcaption></figure>
+    <figure><img src="${A}/logo/favicon.svg" width="90" alt="">
+      <figcaption>Favicon : deux sillons, trait épais.</figcaption></figure>
   </div>
-  <p class="sub" style="margin-top:34px">Zone de protection : la hauteur d'une capitale autour du bloc. Ne jamais étirer, recolorer hors palette, ajouter un second signe, ni retaper le nom.</p>
+  <p class="sub" style="margin-top:34px">Trois épaisseurs de trait selon la taille : fin au-dessus de 300 px, moyen de 80 à 300 px, épais en dessous. Ne jamais redessiner l'anneau, changer son inclinaison ni remplir le disque.</p>
 </section>
 
 <section id="gabarits" class="wrap">
