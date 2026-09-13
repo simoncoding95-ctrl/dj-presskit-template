@@ -46,13 +46,13 @@ const gabarits = [
 ];
 
 const fichiers = [
-  ["logo/logo-papier.svg", "Logo complet animé, papier — fond sombre"],
-  ["logo/logo-encre.svg", "Logo complet animé, encre — fond clair"],
-  ["logo/logo-papier-fixe.svg", "Logo complet fixe (PDF, impression)"],
-  ["logo/symbole-papier.svg", "Symbole seul animé"],
-  ["logo/symbole-papier-moyen.svg", "Symbole trait moyen, 80–300 px"],
-  ["logo/nom-papier.svg", "Nom seul, une ligne"],
-  ["logo/logo-papier-2000.png", "Logo complet PNG 2000 px sans fond"],
+  ["logo/logo-papier.svg", "Logo animé (nom dans la fente), papier — fond sombre"],
+  ["logo/logo-encre.svg", "Logo animé, encre — fond clair"],
+  ["logo/logo-papier-fixe.svg", "Logo fixe (PDF, impression)"],
+  ["logo/symbole-papier.svg", "Symbole seul (fente vide), animé"],
+  ["logo/horizontal-papier.svg", "Horizontal : symbole + nom à côté, animé"],
+  ["logo/nom-papier.svg", "Nom seul, Geist 700"],
+  ["logo/logo-papier-2000.png", "Logo PNG 2000 px sans fond"],
   ["logo/favicon-512.png", "Icône 512 px"],
 ];
 
@@ -171,7 +171,7 @@ const html = `<!doctype html>
 </nav>
 
 <header class="hero wrap">
-  <img class="mark" src="${A}/logo/logo-papier.svg" alt="Univers Parallele" width="784" height="641">
+  <img class="mark" src="${A}/logo/logo-papier.svg" alt="Univers Parallele" width="784" height="556">
   <h1>Charte graphique</h1>
   <p>Un disque noir, une étiquette en papier. La charte part d'une matière plutôt que d'un genre musical : le vinyle mat, et le carton non blanchi de l'étiquette centrale. Le fond est sombre parce qu'un disque l'est, et parce qu'un site de label se consulte le soir.</p>
   <p><em>Univers Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac.</em> Un décalage, pas de l'espace — d'où l'absence de violet, d'étoiles et de dégradés.</p>
@@ -204,16 +204,16 @@ const html = `<!doctype html>
 
 <section id="logo" class="wrap">
   <h2>Logo</h2>
-  <p class="sub">Un vinyle vu de face, ceint d'un anneau de Saturne : le disque dit la musique, l'anneau dit l'autre univers. Le nom dessous, en Geist. Sur écran, l'anneau oscille lentement ; pour l'impression et les PDF, la version fixe.</p>
+  <p class="sub">Un vinyle ceint d'un anneau de Saturne, cassé en son milieu par une fente bordée de deux barres parallèles. Dans la fente, le nom en Geist 700 : l'univers parallèle, c'est le nom. Sur écran, les deux moitiés du disque s'écartent, l'anneau oscille et l'étiquette éclate ; pour l'impression, la version fixe.</p>
   <div class="logos">
-    <figure><img src="${A}/logo/logo-papier.svg" width="260" alt="Univers Parallele">
-      <figcaption>Logo complet, animé. Au-dessus de 160 px.</figcaption></figure>
-    <figure><img src="${A}/logo/symbole-papier-moyen.svg" width="150" alt="">
-      <figcaption>Symbole, trait moyen. Navigation, profils.</figcaption></figure>
-    <figure><img src="${A}/logo/favicon.svg" width="90" alt="">
-      <figcaption>Favicon : deux sillons, trait épais.</figcaption></figure>
+    <figure><img src="${A}/logo/logo-papier.svg" width="280" alt="Univers Parallele">
+      <figcaption>Logo : le nom dans la fente.</figcaption></figure>
+    <figure><img src="${A}/logo/symbole-papier.svg" width="180" alt="">
+      <figcaption>Symbole seul : la fente vide. Profils, icônes.</figcaption></figure>
+    <figure><img src="${A}/logo/horizontal-papier.svg" width="320" alt="">
+      <figcaption>Horizontal : le nom à côté. Navigation, bandeaux.</figcaption></figure>
   </div>
-  <p class="sub" style="margin-top:34px">Trois épaisseurs de trait selon la taille : fin au-dessus de 300 px, moyen de 80 à 300 px, épais en dessous. Ne jamais redessiner l'anneau, changer son inclinaison ni remplir le disque.</p>
+  <p class="sub" style="margin-top:34px">Trois traits selon la taille : fin au-dessus de 300 px, moyen de 80 à 300 px, épais pour le favicon. Barres plus fines que les sillons. Ne jamais remplir le disque, redresser l'anneau ni sortir le nom de la fente dans le logo principal.</p>
 </section>
 
 <section id="gabarits" class="wrap">

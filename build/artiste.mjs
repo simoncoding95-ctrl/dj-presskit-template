@@ -93,7 +93,7 @@ a{color:var(--olive)}
   border-right:1px solid var(--line);display:flex;flex-direction:column;gap:26px}
 /* Le logotype du label signe la colonne. */
 .rail__home{display:block;width:max-content}
-.rail__logo{width:140px;height:auto;display:block;opacity:.9;transition:opacity .15s}
+.rail__logo{width:170px;height:auto;display:block;opacity:.9;transition:opacity .15s}
 .rail__home:hover .rail__logo{opacity:1}
 .rail__id{margin-bottom:auto}
 .rail__name{font-size:23px;font-weight:800;letter-spacing:-.03em;line-height:1}
@@ -174,7 +174,7 @@ footer a{color:var(--muted)}
   .shell{grid-template-columns:1fr}
   .rail{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);
     flex-direction:row;align-items:center;gap:18px;padding:18px clamp(24px,4.5vw,68px)}
-  .rail__logo{width:72px}
+  .rail__logo{width:120px}
   .rail__id,.rail__spec,.rail__dl,.rail__soc,.rail .book{display:none}
   main{padding-bottom:104px}
   /* Le bouton reste sous le pouce : c'est la seule action de la page. */
@@ -210,7 +210,7 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 <aside class="rail">
   <a class="rail__home" href="${up}/">
     <img class="rail__logo" src="${up}/brand-assets/logo/logo-papier.svg"
-         alt="Univers Parallele — accueil" width="784" height="641">
+         alt="Univers Parallele — accueil" width="784" height="556">
   </a>
 
 
