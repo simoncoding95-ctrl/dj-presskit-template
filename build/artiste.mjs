@@ -91,11 +91,10 @@ a{color:var(--olive)}
 .shell{display:grid;grid-template-columns:var(--rail) 1fr;min-height:100vh}
 .rail{position:sticky;top:0;align-self:start;height:100vh;padding:38px 32px;
   border-right:1px solid var(--line);display:flex;flex-direction:column;gap:26px}
-/* La mascotte contient déjà le nom : le logotype ne l'accompagne jamais.
-   Sous 100 px elle devient illisible, d'où la bascule sur le logotype en mobile. */
+/* Le logotype du label signe la colonne ; UP ne sert qu'aux icônes, pas à côté du nom. */
 .rail__home{display:block;width:max-content}
-.rail__mascotte{width:120px;height:auto;display:block;opacity:.9;transition:opacity .15s}
-.rail__home:hover .rail__mascotte{opacity:1}
+.rail__logo{width:150px;height:auto;display:block;opacity:.9;transition:opacity .15s}
+.rail__home:hover .rail__logo{opacity:1}
 .rail__id{margin-bottom:auto}
 .rail__name{font-size:29px;font-weight:700;font-stretch:62%;letter-spacing:.01em;line-height:1}
 .rail__spec{margin-top:16px;font-size:12.5px;color:var(--muted);line-height:1.75}
@@ -175,7 +174,7 @@ footer a{color:var(--muted)}
   .shell{grid-template-columns:1fr}
   .rail{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);
     flex-direction:row;align-items:center;gap:18px;padding:18px clamp(24px,4.5vw,68px)}
-  .rail__mascotte{width:92px}
+  .rail__logo{width:112px}
   .rail__id,.rail__spec,.rail__dl,.rail__soc,.rail .book{display:none}
   main{padding-bottom:104px}
   /* Le bouton reste sous le pouce : c'est la seule action de la page. */
@@ -197,7 +196,7 @@ const html = `<!doctype html>
 <meta property="og:type" content="profile">
 ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}">`)}
 <link rel="icon" href="${up}/brand-assets/logo/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="${up}/brand-assets/logo/favicon-mark.svg">
+<link rel="icon" type="image/svg+xml" href="${up}/brand-assets/logo/favicon.svg">
 <link rel="apple-touch-icon" href="${up}/brand-assets/logo/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -210,8 +209,8 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 <div class="shell">
 <aside class="rail">
   <a class="rail__home" href="${up}/">
-    <img class="rail__mascotte" src="${up}/brand-assets/logo/mascotte-paper.svg"
-         alt="Univers Parallele — accueil" width="1088" height="982">
+    <img class="rail__logo" src="${up}/brand-assets/logo/wordmark-paper.svg"
+         alt="Univers Parallele — accueil" width="6405" height="1454">
   </a>
 
 
@@ -303,7 +302,7 @@ writeFileSync(outAbs, html, "utf8");
 const notDoc = (f) => !f.toLowerCase().endsWith(".md");
 for (const [from, to] of [
   ["assets", join(SITE_ROOT, "assets")],                            // photos
-  ["site/brand-assets/logo", join(SITE_ROOT, "brand-assets/logo")], // mascotte, logotype, favicon
+  ["site/brand-assets/logo", join(SITE_ROOT, "brand-assets/logo")], // logotype, UP, favicon
   ["site/downloads", SITE_ROOT],                                    // presskit PDF
 ]) {
   const s = join(root, from);

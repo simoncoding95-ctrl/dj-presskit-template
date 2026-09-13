@@ -65,24 +65,27 @@ a{color:var(--olive)}
 .nav{position:sticky;top:0;z-index:9;display:flex;align-items:center;gap:16px;
   padding:12px var(--gutter);background:rgba(22,21,15,.9);backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);font-size:13px}
-.nav__name{font-weight:700;font-stretch:62%;letter-spacing:.06em;font-size:13px}
+.nav__home{display:block;line-height:0}
+.nav__logo{height:28px;width:auto;display:block}
 .nav__links{display:flex;gap:20px;margin-left:auto;color:var(--muted)}
 .nav__links a{color:inherit;text-decoration:none;white-space:nowrap}
 .nav__links a:hover{color:var(--ink)}
 @media (max-width:820px){.nav__links{display:none}}
 
 /* ---------- ouverture ---------- */
-.hero{padding:clamp(44px,7vw,86px) 0 clamp(36px,5vw,58px);display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(0,300px);gap:clamp(28px,5vw,64px);align-items:center}
-.hero h1{font-size:clamp(46px,8.6vw,116px);font-weight:700;font-stretch:62%;
-  line-height:.86;letter-spacing:-.005em}
-.hero__lede{margin-top:26px;max-width:52ch;font-size:clamp(16px,1.9vw,20px);line-height:1.45}
+/* padding-block, pas le raccourci : il remettait à zéro la gouttière de .wrap. */
+.hero{padding-block:clamp(44px,7vw,86px) clamp(36px,5vw,58px);display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:clamp(28px,5vw,64px);align-items:center}
+/* Le titre est le logotype lui-même : un <h1> texte en Archivo 62 % aurait contredit la marque. */
+.hero h1{line-height:0;margin:0}
+.hero__wordmark{width:100%;max-width:440px;height:auto;display:block;margin-left:auto}
+.hero__lede{margin-top:0;max-width:52ch;font-size:clamp(16px,1.9vw,20px);line-height:1.45}
 .hero__meta{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:22px;font-size:13px;color:var(--muted)}
-.hero__mark{width:100%;height:auto;display:block}
 @media (max-width:820px){
   .hero{grid-template-columns:1fr;gap:26px}
-  /* La marque passe devant : sur un écran étroit on la voit avant de lire. */
-  .hero__fig{order:-1;max-width:210px}
+  /* Le logotype est déjà dans la barre : répété juste dessous, il ferait doublon.
+     Visuellement masqué seulement — le <h1> reste pour les lecteurs d'écran et le SEO. */
+  .hero__fig{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
 }
 
 /* La prochaine date, en ouverture : c'est la seule information périssable. */
@@ -280,9 +283,9 @@ const html = `<!doctype html>
 <meta property="og:title" content="${esc(c.name)} — Lille">
 <meta property="og:description" content="${esc(c.baseline)}">
 <meta property="og:type" content="website">
-<meta property="og:image" content="${esc(asset("brand-assets/logo/avatar-disc-1000.png"))}">
+<meta property="og:image" content="${esc(asset("brand-assets/logo/og-1200.png"))}">
 <link rel="icon" href="${up}/brand-assets/logo/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="${up}/brand-assets/logo/favicon-mark.svg">
+<link rel="icon" type="image/svg+xml" href="${up}/brand-assets/logo/favicon.svg">
 <link rel="apple-touch-icon" href="${up}/brand-assets/logo/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -292,15 +295,14 @@ const html = `<!doctype html>
 <body>
 
 <nav class="nav">
-  <span class="nav__name">${esc(c.name).toUpperCase()}</span>
+  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/wordmark-paper.svg" alt="" width="6405" height="1454"></a>
   <div class="nav__links">
     ${navLinks.map(([href, label]) => `<a href="${href}">${esc(label)}</a>`).join("")}
   </div>
 </nav>
 
-<header class="wrap hero">
+<header class="wrap hero" id="top">
   <div>
-    <h1>${esc(c.name)}</h1>
     ${when(c.lede, (t) => `<p class="hero__lede">${esc(t)}</p>`)}
     ${when(c.meta, (m) => `<div class="hero__meta">${m.map((x) =>
       `<span>${esc(x)}</span>`).join("")}</div>`)}
@@ -315,10 +317,7 @@ const html = `<!doctype html>
       <span class="nextdate__d">${esc(tba.label)}</span>
     </a>` : ""}
   </div>
-  <figure class="hero__fig" style="margin:0">
-    <img class="hero__mark" src="${up}/brand-assets/logo/mascotte-paper.svg"
-         alt="${esc(c.name)}" width="1088" height="982">
-  </figure>
+  <h1 class="hero__fig"><img class="hero__wordmark" src="${up}/brand-assets/logo/wordmark-paper.svg" alt="${esc(c.name)}" width="6405" height="1454"></h1>
 </header>
 
 <main>

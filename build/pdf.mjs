@@ -36,9 +36,9 @@ const booking = (c.contacts ?? []).find((x) => /booking/i.test(x.role)) ?? c.con
 const qr = file("site/qr-soundcloud.svg")
   .replace(/<\?xml[^>]*\?>/, "")
   .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:100%;height:auto;display:block"');
-const mascotte = file("site/brand-assets/logo/mascotte-ink.svg")
+const logo = file("site/brand-assets/logo/wordmark-ink.svg")
   .replace(/<\?xml[^>]*\?>/, "")
-  .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:29mm;height:auto;display:block"');
+  .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:42mm;height:auto;display:block"');
 
 const rows = (list) => `<dl class="spec">${list.map(([k, v]) =>
   `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>`;
@@ -120,7 +120,7 @@ const html = `<!doctype html>
 <body>
 
 <section class="sheet">
-  <div class="sig sig--top">${mascotte}</div>
+  <div class="sig sig--top">${logo}</div>
 
   <div class="top">
     <div style="min-width:0">
