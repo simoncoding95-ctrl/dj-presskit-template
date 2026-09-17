@@ -46,14 +46,14 @@ const gabarits = [
 ];
 
 const fichiers = [
-  ["logo/logo-papier.svg", "Logo animé (nom dans la fente), papier — fond sombre"],
-  ["logo/logo-encre.svg", "Logo animé, encre — fond clair"],
-  ["logo/logo-papier-fixe.svg", "Logo fixe (PDF, impression)"],
-  ["logo/symbole-papier.svg", "Symbole seul (fente vide), animé"],
-  ["logo/horizontal-papier.svg", "Horizontal : symbole + nom à côté, animé"],
-  ["logo/nom-papier.svg", "Nom seul, Schibsted Grotesk"],
-  ["logo/logo-papier-2000.png", "Logo PNG 2000 px sans fond"],
+  ["logo/logo-papier-2400.png", "Logo complet, papier — fond sombre, 2400 px sans fond"],
+  ["logo/logo-encre-2000.png", "Logo en négatif, encre — fond clair et impression"],
+  ["logo/symbole-papier-1600.png", "Symbole seul (le vinyle et son anneau), 1600 px"],
+  ["logo/nom-papier-2000.png", "Nom seul, deux lignes"],
   ["logo/favicon-512.png", "Icône 512 px"],
+  ["logo/og-1200.png", "Aperçu de partage, 1200 × 630"],
+  ["logo/carre-1080.png", "Carré réseaux, 1080 px, fond encre"],
+  ["logo/profil-1080.png", "Photo de profil : le symbole sur fond encre"],
 ];
 
 /* ---------- rendu ---------- */
@@ -150,7 +150,7 @@ const html = `<!doctype html>
 <meta property="og:description" content="Palette, typographie, logo et gabarits.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="${A}/logo/og-1200.png">
-<link rel="icon" type="image/svg+xml" href="${A}/logo/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="${A}/logo/favicon-32.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..800&display=swap" rel="stylesheet">
@@ -171,7 +171,7 @@ const html = `<!doctype html>
 </nav>
 
 <header class="hero wrap">
-  <img class="mark" src="${A}/logo/logo-papier.svg" alt="Univers Parallele" width="784" height="544">
+  <img class="mark" src="${A}/logo/logo-papier-2000.png" alt="Univers Parallele" width="2000" height="690">
   <h1>Charte graphique</h1>
   <p>Un disque noir, une étiquette en papier. La charte part d'une matière plutôt que d'un genre musical : le vinyle mat, et le carton non blanchi de l'étiquette centrale. Le fond est sombre parce qu'un disque l'est, et parce qu'un site de label se consulte le soir.</p>
   <p><em>Univers Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac.</em> Un décalage, pas de l'espace — d'où l'absence de violet, d'étoiles et de dégradés.</p>
@@ -204,16 +204,16 @@ const html = `<!doctype html>
 
 <section id="logo" class="wrap">
   <h2>Logo</h2>
-  <p class="sub">Un vinyle ceint d'un anneau de Saturne, qui éclate : les sillons tiennent à gauche et se brisent en éclats cristallins ailleurs, autour d'une étiquette pleine. Une fente le traverse ; le nom y est écrit. Sur écran, les moitiés s'écartent, l'anneau oscille et des ondes partent de l'étiquette ; pour l'impression, la version fixe.</p>
+  <p class="sub">Un vinyle ceint d'un anneau de Saturne, posé à droite ; le nom à gauche, en deux lignes de capitales grasses. L'anneau passe devant le disque en bas et derrière en haut : c'est ce croisement qui fait l'objet, il ne se redresse pas. La version papier sert les fonds sombres, le négatif les fonds clairs et l'impression.</p>
   <div class="logos">
-    <figure><img src="${A}/logo/logo-papier.svg" width="280" alt="Univers Parallele">
-      <figcaption>Logo : le nom dans la fente.</figcaption></figure>
-    <figure><img src="${A}/logo/symbole-papier.svg" width="180" alt="">
-      <figcaption>Symbole seul : la fente vide. Profils, icônes.</figcaption></figure>
-    <figure><img src="${A}/logo/horizontal-papier.svg" width="320" alt="">
-      <figcaption>Horizontal : le nom à côté. Navigation, bandeaux.</figcaption></figure>
+    <figure><img src="${A}/logo/logo-papier-2000.png" width="280" alt="Univers Parallele">
+      <figcaption>Logo complet. Navigation, ouverture, bandeaux.</figcaption></figure>
+    <figure><img src="${A}/logo/symbole-papier-1600.png" width="180" alt="">
+      <figcaption>Symbole seul. Profils, icônes, tampons.</figcaption></figure>
+    <figure><img src="${A}/logo/nom-papier-2000.png" width="320" alt="">
+      <figcaption>Nom seul, quand le symbole est déjà là.</figcaption></figure>
   </div>
-  <p class="sub" style="margin-top:34px">Trois traits selon la taille : fin au-dessus de 300 px, moyen de 80 à 300 px, épais pour le favicon (sans éclats). Ne jamais redresser l'anneau, recoller les éclats ni sortir le nom de la fente dans le logo principal.</p>
+  <p class="sub" style="margin-top:34px">Sous 120 px de large, le nom n'est plus lisible : passer au symbole seul. Ne jamais redresser l'anneau, séparer le nom du disque autrement que dans la version « nom seul », ni poser la version papier sur un fond clair — c'est le négatif qui sert là.</p>
 </section>
 
 <section id="gabarits" class="wrap">

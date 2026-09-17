@@ -66,7 +66,8 @@ a{color:var(--olive)}
   padding:12px var(--gutter);background:rgba(22,21,15,.9);backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);font-size:13px}
 .nav__home{display:block;line-height:0}
-.nav__logo{height:36px;width:auto;display:block}
+/* Le lockup tient le nom sur deux lignes : sous 44px il devient illisible. */
+.nav__logo{height:46px;width:auto;display:block}
 .nav__links{display:flex;gap:20px;margin-left:auto;color:var(--muted)}
 .nav__links a{color:inherit;text-decoration:none;white-space:nowrap}
 .nav__links a:hover{color:var(--ink)}
@@ -78,7 +79,7 @@ a{color:var(--olive)}
   grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:clamp(28px,5vw,64px);align-items:center}
 /* Le titre est le logotype lui-même : un <h1> texte aurait contredit la marque. */
 .hero h1{line-height:0;margin:0}
-/* Le logo animé : l'anneau oscille, en CSS dans le SVG, coupé sous prefers-reduced-motion. */
+/* Le logotype est un PNG détouré depuis le visuel du 17/09 : plus d'animation. */
 .hero__wordmark{width:100%;max-width:440px;height:auto;display:block;margin-left:auto}
 .hero__lede{margin-top:0;max-width:52ch;font-size:clamp(16px,1.9vw,20px);line-height:1.45}
 .hero__meta{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:22px;font-size:13px;color:var(--muted)}
@@ -286,7 +287,8 @@ const html = `<!doctype html>
 <meta property="og:type" content="website">
 <meta property="og:image" content="${esc(asset("brand-assets/logo/og-1200.png"))}">
 <link rel="icon" href="${up}/brand-assets/logo/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="${up}/brand-assets/logo/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="${up}/brand-assets/logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="${up}/brand-assets/logo/favicon-512.png">
 <link rel="apple-touch-icon" href="${up}/brand-assets/logo/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -296,7 +298,7 @@ const html = `<!doctype html>
 <body>
 
 <nav class="nav">
-  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/horizontal-papier.svg" alt="" width="2267" height="544"></a>
+  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/horizontal-papier-2400.png" alt="" width="2400" height="828"></a>
   <div class="nav__links">
     ${navLinks.map(([href, label]) => `<a href="${href}">${esc(label)}</a>`).join("")}
   </div>
@@ -318,7 +320,7 @@ const html = `<!doctype html>
       <span class="nextdate__d">${esc(tba.label)}</span>
     </a>` : ""}
   </div>
-  <h1 class="hero__fig"><img class="hero__wordmark" src="${up}/brand-assets/logo/logo-papier.svg" alt="${esc(c.name)}" width="784" height="544"></h1>
+  <h1 class="hero__fig"><img class="hero__wordmark" src="${up}/brand-assets/logo/logo-papier-2000.png" alt="${esc(c.name)}" width="2000" height="690"></h1>
 </header>
 
 <main>

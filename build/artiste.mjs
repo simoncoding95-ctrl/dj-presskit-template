@@ -196,7 +196,8 @@ const html = `<!doctype html>
 <meta property="og:type" content="profile">
 ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}">`)}
 <link rel="icon" href="${up}/brand-assets/logo/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="${up}/brand-assets/logo/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="${up}/brand-assets/logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="${up}/brand-assets/logo/favicon-512.png">
 <link rel="apple-touch-icon" href="${up}/brand-assets/logo/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -209,8 +210,8 @@ ${when(c.hero_image, (s) => `<meta property="og:image" content="${esc(asset(s))}
 <div class="shell">
 <aside class="rail">
   <a class="rail__home" href="${up}/">
-    <img class="rail__logo" src="${up}/brand-assets/logo/logo-papier.svg"
-         alt="Univers Parallele — accueil" width="784" height="544">
+    <img class="rail__logo" src="${up}/brand-assets/logo/logo-papier-2000.png"
+         alt="Univers Parallele — accueil" width="2000" height="690">
   </a>
 
 
