@@ -36,7 +36,7 @@ const booking = (c.contacts ?? []).find((x) => /booking/i.test(x.role)) ?? c.con
 const qr = file("site/qr-soundcloud.svg")
   .replace(/<\?xml[^>]*\?>/, "")
   .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:100%;height:auto;display:block"');
-// Le logotype est raster depuis le 17/09 : négatif du visuel, lisible sur le papier.
+// Logotype coupé du 25/09, version encre : encre + olive de la palette papier.
 const logo = `<img src="${img("site/brand-assets/logo/logo-encre-2000.png")}"
   alt="Univers Parallele" style="width:40mm;height:auto;display:block">`;
 
