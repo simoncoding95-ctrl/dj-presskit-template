@@ -4,14 +4,14 @@
   "meta": ["Lille", "Collectif & label", "Minimal / micro house"],
   "lede": "Un collectif lillois qui fait exister la micro-house en journée autant qu'en club — et qui montre comment elle se fabrique.",
   "about": [
-    "Univers Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac. Un décalage, pas de l'espace.",
-    "On programme des soirées et des day events à Lille, on sort des mixes, et on accompagne les artistes du collectif sur le booking et la production. Le format compte autant que la musique : un café-croissant à onze heures ne se joue pas comme un after."
+    "Univers Parallele, c'est la face B. Le disque resté au fond du bac. Un décalage, pas de l'espace.",
+    "On joue en club, en festival et sur tout type d'événement, privé compris. On sort des mixes, et on accompagne les artistes du collectif sur le booking et la production. Le format compte autant que la musique : un warm-up ne se joue pas comme un closing."
   ],
   "facts": [
     ["Base", "Lille, France"],
     ["Depuis", "2026"],
     ["Style", "Minimal, micro house — 120–130 BPM"],
-    ["Formats", "Club, day event, café-croissant"]
+    ["Formats", "Club, festival, événement privé"]
   ],
   "artists": [
     {
@@ -45,12 +45,13 @@
     "asks": [
       "Booker un artiste — réponse sous 48 h, presskit et fiche technique en ligne.",
       "Proposer un lieu — bar, friche, boutique, péniche. Le format s'adapte.",
-      "Monter une date à deux — on apporte le public et la communication."
+      "Monter une date à deux — on apporte le public et la communication.",
+      "Un événement privé — même exigence qu'en club, le set s'adapte au lieu et au public."
     ]
   },
   "links": [
     { "label": "Instagram", "url": "https://www.instagram.com/universparallelestudio/" },
     { "label": "SoundCloud", "url": "" }
   ],
-  "updated": "6 septembre 2026"
+  "updated": "19 octobre 2026"
 }

@@ -174,7 +174,7 @@ const html = `<!doctype html>
   <img class="mark" src="${A}/logo/logo-papier-2000.png" alt="Univers Parallele" width="2000" height="690">
   <h1>Charte graphique</h1>
   <p>Un disque noir, une étiquette en papier. La charte part d'une matière plutôt que d'un genre musical : le vinyle mat, et le carton non blanchi de l'étiquette centrale. Le fond est sombre parce qu'un disque l'est, et parce qu'un site de label se consulte le soir.</p>
-  <p><em>Univers Parallele, c'est le dimanche matin au lieu du samedi soir. La face B. Le disque resté au fond du bac.</em> Un décalage, pas de l'espace — d'où l'absence de violet, d'étoiles et de dégradés.</p>
+  <p><em>Univers Parallele, c'est la face B. Le disque resté au fond du bac.</em> Un décalage, pas de l'espace — d'où l'absence de violet, d'étoiles et de dégradés.</p>
   <p><a class="cta" href="${A}/charte-graphique.pdf">Charte complète en PDF, 12 planches</a></p>
 </header>
 
