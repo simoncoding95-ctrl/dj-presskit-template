@@ -66,8 +66,8 @@ a{color:var(--olive)}
   padding:12px var(--gutter);background:rgba(22,21,15,.9);backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);font-size:13px}
 .nav__home{display:block;line-height:0}
-/* Le lockup tient le nom sur deux lignes : sous 44px il devient illisible. */
-.nav__logo{height:46px;width:auto;display:block}
+/* Le monogramme UP, version papier : sur le fond encre il redonne l'icône du site. */
+.nav__logo{height:38px;width:auto;display:block}
 .nav__links{display:flex;gap:20px;margin-left:auto;color:var(--muted)}
 .nav__links a{color:inherit;text-decoration:none;white-space:nowrap}
 .nav__links a:hover{color:var(--ink)}
@@ -77,15 +77,15 @@ a{color:var(--olive)}
 /* padding-block, pas le raccourci : il remettait à zéro la gouttière de .wrap. */
 .hero{padding-block:clamp(44px,7vw,86px) clamp(36px,5vw,58px);display:grid;
   grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:clamp(28px,5vw,64px);align-items:center}
-/* Le titre est le logotype lui-même : un <h1> texte aurait contredit la marque. */
+/* Le titre est le monogramme lui-même : un <h1> texte aurait contredit la marque. */
 .hero h1{line-height:0;margin:0}
-/* Le logotype est un PNG détouré depuis le visuel du 17/09 : plus d'animation. */
-.hero__wordmark{width:100%;max-width:440px;height:auto;display:block;margin-left:auto}
+/* Monogramme UP détouré (make-logo-coupe.py), le même que l'icône du site. */
+.hero__wordmark{width:100%;max-width:400px;height:auto;display:block;margin-left:auto}
 .hero__lede{margin-top:0;max-width:52ch;font-size:clamp(16px,1.9vw,20px);line-height:1.45}
 .hero__meta{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:22px;font-size:13px;color:var(--muted)}
 @media (max-width:820px){
   .hero{grid-template-columns:1fr;gap:26px}
-  /* Le logotype est déjà dans la barre : répété juste dessous, il ferait doublon.
+  /* Le monogramme est déjà dans la barre : répété juste dessous, il ferait doublon.
      Visuellement masqué seulement — le <h1> reste pour les lecteurs d'écran et le SEO. */
   .hero__fig{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
 }
@@ -298,7 +298,7 @@ const html = `<!doctype html>
 <body>
 
 <nav class="nav">
-  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/horizontal-papier-2400.png" alt="" width="2400" height="610"></a>
+  <a class="nav__home" href="#top" aria-label="${esc(c.name)}"><img class="nav__logo" src="${up}/brand-assets/logo/monogramme-papier-1000.png" alt="" width="1000" height="569"></a>
   <div class="nav__links">
     ${navLinks.map(([href, label]) => `<a href="${href}">${esc(label)}</a>`).join("")}
   </div>
@@ -320,7 +320,7 @@ const html = `<!doctype html>
       <span class="nextdate__d">${esc(tba.label)}</span>
     </a>` : ""}
   </div>
-  <h1 class="hero__fig"><img class="hero__wordmark" src="${up}/brand-assets/logo/logo-papier-2000.png" alt="${esc(c.name)}" width="2000" height="508"></h1>
+  <h1 class="hero__fig"><img class="hero__wordmark" src="${up}/brand-assets/logo/monogramme-papier-1000.png" alt="${esc(c.name)}" width="1000" height="569"></h1>
 </header>
 
 <main>
