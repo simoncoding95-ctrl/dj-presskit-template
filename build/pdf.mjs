@@ -36,9 +36,9 @@ const booking = (c.contacts ?? []).find((x) => /booking/i.test(x.role)) ?? c.con
 const qr = file("site/qr-soundcloud.svg")
   .replace(/<\?xml[^>]*\?>/, "")
   .replace(/\swidth="[^"]*"\s+height="[^"]*"/, ' style="width:100%;height:auto;display:block"');
-// Monogramme UP, version encre (encre + olive de la palette papier) : le PDF est sur fond clair.
-const logo = `<img src="${img("site/brand-assets/logo/monogramme-encre-1000.png")}"
-  alt="Univers Parallele" style="width:26mm;height:auto;display:block">`;
+// Logotype coupé du 25/09, version encre : encre + olive de la palette papier.
+const logo = `<img src="${img("site/brand-assets/logo/logo-encre-2000.png")}"
+  alt="Univers Parallele" style="width:40mm;height:auto;display:block">`;
 
 const rows = (list) => `<dl class="spec">${list.map(([k, v]) =>
   `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>`;
