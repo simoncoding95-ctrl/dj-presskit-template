@@ -9,7 +9,7 @@ agency: "Indépendant"
 booking_email: "dorian.moreau056@gmail.com"
 press_email: "dorian.moreau056@gmail.com"
 press_photo: "assets/photos/portrait-01.png"
-updated: "2026-09-04"
+updated: "2026-10-19"
 ---
 
 # A.RES
@@ -28,21 +28,13 @@ formats de 1h30 à six heures.
 
 ## Bio longue
 
-Originaire de Belgique, A.RES découvre tôt la culture électronique. À quinze ans il
-fréquente déjà les clubs et les soirées qui vont façonner son oreille : le Decadance,
-le Fuse, le Club Vaag.
+Originaire de Belgique, A.RES découvre très tôt la culture électronique. À 15 ans, il commence à fréquenter les clubs et soirées qui vont façonner son identité musicale, du Decadance au Fuse, en passant par le Club Vaag et d’autres lieux emblématiques de la scène belge.
 
-La house et le monde de la nuit prennent le dessus. Ricardo Villalobos, Fedeo,
-Maya Jane Coles, Jane Fitz : de ces écoutes il tire un terrain à lui, entre house,
-minimal et micro house, autour de 120 à 130 BPM.
+Sa passion pour la house et le monde de la nuit grandit rapidement. Influencé par des artistes comme Ricardo Villalobos, Fedo, Maya Jane Coles ou encore Jane Fitz, il développe au fil des années un univers personnel, entre house, minimal et micro house.
 
-Le set se construit sur des boucles longues : les éléments entrent et sortent un par un,
-la tension monte par accumulation plutôt que par rupture, et un même motif peut tenir
-plusieurs minutes avant de se déplacer. C'est une écriture qui demande de la durée — d'où
-les formats de 1h30 à six heures.
+À travers ses sets portés par le groove, sa sélection est une véritable culture du club.
 
-Installé à Lille, fondateur du collectif Univers Parallele. Plusieurs productions micro
-et plusieurs mixes en ligne.
+Une vision libre de la nuit, entre minimalisme, profondeur et énergie.
 
 ---
 
@@ -101,4 +93,4 @@ clés USB. Détail dans la fiche technique.
 
 ---
 
-*Presskit mis à jour le 4 septembre 2026. Merci de ne pas recadrer les visuels ni retirer les crédits.*
+*Presskit mis à jour le 19 octobre 2026. Merci de ne pas recadrer les visuels ni retirer les crédits.*
